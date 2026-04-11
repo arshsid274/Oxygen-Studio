@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com -->
+<!-- Last Published: Sun Mar 29 2026 17:53:14 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="oxygen-studio.webflow.io" data-wf-page="68f28cd63ee28173b2cf4730" data-wf-site="68f28cd63ee28173b2cf4734" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Oxygen Studio - Webflow Ecommerce website template
+    </title>
+    <meta content="Oxygen Studio is a modern and high-performance agency template designed for creative studios, digital agencies, and freelancers. Built with clean layouts, smooth interactions, and full responsiveness." name="description" />
+    <meta content="Oxygen Studio - Webflow Ecommerce website template" property="og:title" />
+    <meta content="Oxygen Studio is a modern and high-performance agency template designed for creative studios, digital agencies, and freelancers. Built with clean layouts, smooth interactions, and full responsiveness." property="og:description" />
+    <meta content="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6963fa4ea85f21140f8007cd_acb88a39565b8724fc7961b7f688c1a9_Open%20graph.jpg" property="og:image" />
+    <meta content="Oxygen Studio - Webflow Ecommerce website template" property="twitter:title" />
+    <meta content="Oxygen Studio is a modern and high-performance agency template designed for creative studios, digital agencies, and freelancers. Built with clean layouts, smooth interactions, and full responsiveness." property="twitter:description" />
+    <meta content="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6963fa4ea85f21140f8007cd_acb88a39565b8724fc7961b7f688c1a9_Open%20graph.jpg" property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/css/oxygen-studio.webflow.shared.e5ffd9211.css" rel="stylesheet" type="text/css" integrity="sha384-5f/ZIR+BhDtn2pSTOHsgipgvKO7Gy1ZrOel+1tbXPLAVqefnDHBGmqTJJgqNNAKN" crossorigin="anonymous" />
+    <style>
+      @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id=&#34;a06df44f-d7af-f5bb-3e24-2ac178213ed6&#34;] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id=&#34;a06df44f-d7af-f5bb-3e24-2ac178213ed6&#34;] {opacity:0;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id=&#34;a06df44f-d7af-f5bb-3e24-2ac178213ed6&#34;] {opacity:0;}}
+    </style>
+    <style>
+      html.w-mod-js:not(.w-mod-ix3) :is(.nav-menu-wrap, [button-icon=&#34;main&#34;], [button-icon=&#34;hover&#34;], .heading-03, .text-default, .cta-button-wrap, [data-name=&#34;title&#34;], [data-name=&#34;description&#34;], .button-wrap, .section-badge, .heading-05, [data-animation=&#34;title&#34;], [data-animation=&#34;description&#34;], [page-load-animation=&#34;title&#34;], .hero-title.two, .thums-border-top.one, .thums-border-right.one, .thums-border-bottom.one, .thums-border-left.one, .hero-image.one, .hero-title.one, .thums-border-top.two, .thums-border-right.two, .thums-border-bottom.two, .thums-border-left.two, .hero-image.two, .hero-title.three, .thums-border-top.three, .thums-border-right.three, .thums-border-bottom.three, .thums-border-left.three, .hero-image.three, .hero-description, .hero-button-wrap, .review-text, .hero-logo-wrapper) {visibility: hidden !important;}
+    </style>
+    <script type="text/javascript">
+      !function(o,c){var n=c.documentElement,t=&#34; w-mod-&#34;;n.className+=t+&#34;js&#34;,(&#34;ontouchstart&#34;in o||o.DocumentTouch&amp;&amp;c instanceof DocumentTouch)&amp;&amp;(n.className+=t+&#34;touch&#34;)}(window,document);
+    </script>
+    <link href="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6988a61573519bcca0c9c034_Apex.svg" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6988a618e8393f8fc06b2607_Logotype.svg" rel="apple-touch-icon" />
+    <style>
+      [data-stagger=&#34;animate&#34;] &gt; * {
+     opacity: 0;
+     transform: translateY(40px);
+		}
+ 	[remove-flicker]{
+     opacity: 0;
+		}
+ .job-card {
+  will-change: transform, opacity;
+}
+    </style>
+    <script type="text/javascript">
+      window.__WEBFLOW_CURRENCY_SETTINGS = {&#34;currencyCode&#34;:&#34;USD&#34;,&#34;symbol&#34;:&#34;$&#34;,&#34;decimal&#34;:&#34;.&#34;,&#34;fractionDigits&#34;:2,&#34;group&#34;:&#34;,&#34;,&#34;template&#34;:&#34;{{wf {\&#34;path\&#34;:\&#34;symbol\&#34;,\&#34;type\&#34;:\&#34;PlainText\&#34;} }} {{wf {\&#34;path\&#34;:\&#34;amount\&#34;,\&#34;type\&#34;:\&#34;CommercePrice\&#34;} }} {{wf {\&#34;path\&#34;:\&#34;currencyCode\&#34;,\&#34;type\&#34;:\&#34;PlainText\&#34;} }}&#34;,&#34;hideDecimalForWholeNumbers&#34;:false};
+    </script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div data-wf--navbar--variant="home" class="navbar">
+        <div class="nav">
+          <div class="container">
+            <div data-animation="nav" class="nav-wrapper">
+              <a brand-logo="" href="/" aria-current="page" class="nav-logo w-inline-block w--current">              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 177 28" fill="none" class="svg w-variant-181a410a-7f17-f90c-3d7e-33139ec58f3a">
+                <path d="M6.78125 28C4.58333 28 2.90104 27.3385 1.73438 26.0156C0.578125 24.6823 0 22.7604 0 20.25V7.1875C0 4.83333 0.572917 3.04688 1.71875 1.82812C2.875 0.609375 4.5625 0 6.78125 0C9 0 10.6823 0.609375 11.8281 1.82812C12.9844 3.04688 13.5625 4.83333 13.5625 7.1875V20.25C13.5625 22.7604 12.9792 24.6823 11.8125 26.0156C10.6562 27.3385 8.97917 28 6.78125 28ZM6.82812 22.9375C7.66146 22.9375 8.07812 22.1302 8.07812 20.5156V7.09375C8.07812 5.73958 7.67188 5.0625 6.85938 5.0625C5.94271 5.0625 5.48438 5.75521 5.48438 7.14062V20.5469C5.48438 21.401 5.58854 22.0156 5.79688 22.3906C6.00521 22.7552 6.34896 22.9375 6.82812 22.9375Z" fill="currentColor">
+                </path>
+                <path d="M14.9844 27.75L17.9375 13.1719L15.5938 0.234375H20.9688L22.3906 9.6875L23.6562 0.234375H29.0469L26.7031 13.1719L29.6406 27.75H24.0781L22.3438 17L20.5625 27.75H14.9844Z" fill="currentColor">
+                </path>
+                <path d="M34.6094 27.75V18.7031L30.2188 0.25H35.6719L37.2031 9.5625L38.7344 0.25H44.1719L39.7969 18.7031V27.75H34.6094Z" fill="currentColor">
+                </path>
+                <path d="M51.2344 28C47.3073 28 45.3438 25.1875 45.3438 19.5625V7.70312C45.3438 2.56771 47.5938 0 52.0938 0C53.9479 0 55.3698 0.375 56.3594 1.125C57.349 1.86458 58.0312 2.94792 58.4062 4.375C58.7812 5.80208 58.9688 7.54167 58.9688 9.59375H53.5938V7.15625C53.5938 6.5625 53.5104 6.06771 53.3438 5.67188C53.1875 5.26562 52.8542 5.0625 52.3438 5.0625C51.7083 5.0625 51.2865 5.27604 51.0781 5.70312C50.8802 6.13021 50.7812 6.59896 50.7812 7.10938V20.4375C50.7812 21.1771 50.875 21.7812 51.0625 22.25C51.2604 22.7083 51.6406 22.9375 52.2031 22.9375C52.7865 22.9375 53.1719 22.7083 53.3594 22.25C53.5573 21.7812 53.6562 21.1667 53.6562 20.4062V16.4844H52.1875V11.7344H58.9062V27.75H56.7031L55.7656 25.4375C54.8073 27.1458 53.2969 28 51.2344 28Z" fill="currentColor">
+                </path>
+                <path d="M61.0938 27.75V0.25H72.0938V5.5625H66.6875V10.9219H71.875V16.0938H66.6875V22.3906H72.4531V27.75H61.0938Z" fill="currentColor">
+                </path>
+                <path d="M74.2812 27.75V0.25H79.9375L82.4688 13.4219V0.25H87.7812V27.75H82.4062L79.6562 14V27.75H74.2812Z" fill="currentColor">
+                </path>
+                <path d="M104.25 28C101.74 28 99.9271 27.375 98.8125 26.125C97.7083 24.875 97.1562 22.8854 97.1562 20.1562V17.4688H102.594V20.9062C102.594 21.5417 102.688 22.0417 102.875 22.4062C103.073 22.7604 103.411 22.9375 103.891 22.9375C104.391 22.9375 104.734 22.7917 104.922 22.5C105.12 22.2083 105.219 21.7292 105.219 21.0625C105.219 20.2188 105.135 19.5156 104.969 18.9531C104.802 18.3802 104.51 17.8385 104.094 17.3281C103.688 16.8073 103.12 16.2031 102.391 15.5156L99.9219 13.1719C98.0781 11.4323 97.1562 9.44271 97.1562 7.20312C97.1562 4.85938 97.6979 3.07292 98.7812 1.84375C99.875 0.614583 101.453 0 103.516 0C106.036 0 107.823 0.671875 108.875 2.01562C109.938 3.35938 110.469 5.40104 110.469 8.14062H104.875V6.25C104.875 5.875 104.766 5.58333 104.547 5.375C104.339 5.16667 104.052 5.0625 103.688 5.0625C103.25 5.0625 102.927 5.1875 102.719 5.4375C102.521 5.67708 102.422 5.98958 102.422 6.375C102.422 6.76042 102.526 7.17708 102.734 7.625C102.943 8.07292 103.354 8.58854 103.969 9.17188L107.141 12.2188C107.776 12.8229 108.359 13.4635 108.891 14.1406C109.422 14.8073 109.849 15.5885 110.172 16.4844C110.495 17.3698 110.656 18.4531 110.656 19.7344C110.656 22.3177 110.177 24.3438 109.219 25.8125C108.271 27.2708 106.615 28 104.25 28Z" fill="currentColor">
+                </path>
+                <path d="M114.859 27.75V5.53125H111.594V0.25H123.625V5.53125H120.359V27.75H114.859Z" fill="currentColor">
+                </path>
+                <path d="M131.516 28C129.224 28 127.536 27.3594 126.453 26.0781C125.37 24.7865 124.828 22.8906 124.828 20.3906V0.25H130.172V20.1719C130.172 20.6302 130.198 21.0729 130.25 21.5C130.302 21.9167 130.422 22.2604 130.609 22.5312C130.797 22.8021 131.099 22.9375 131.516 22.9375C131.943 22.9375 132.25 22.8073 132.438 22.5469C132.625 22.276 132.74 21.9271 132.781 21.5C132.833 21.0729 132.859 20.6302 132.859 20.1719V0.25H138.203V20.3906C138.203 22.8906 137.661 24.7865 136.578 26.0781C135.495 27.3594 133.807 28 131.516 28Z" fill="currentColor">
+                </path>
+                <path d="M140.312 27.75V0.25H147.875C149.854 0.25 151.344 0.802083 152.344 1.90625C153.344 3 153.844 4.60417 153.844 6.71875V19.5938C153.844 22.1979 153.385 24.2083 152.469 25.625C151.562 27.0417 149.969 27.75 147.688 27.75H140.312ZM145.844 22.8906H146.797C147.807 22.8906 148.312 22.401 148.312 21.4219V7.23438C148.312 6.31771 148.188 5.72917 147.938 5.46875C147.698 5.19792 147.203 5.0625 146.453 5.0625H145.844V22.8906Z" fill="currentColor">
+                </path>
+                <path d="M155.844 27.75V0.25H161.156V27.75H155.844Z" fill="currentColor">
+                </path>
+                <path d="M169.906 28C167.708 28 166.026 27.3385 164.859 26.0156C163.703 24.6823 163.125 22.7604 163.125 20.25V7.1875C163.125 4.83333 163.698 3.04688 164.844 1.82812C166 0.609375 167.688 0 169.906 0C172.125 0 173.807 0.609375 174.953 1.82812C176.109 3.04688 176.688 4.83333 176.688 7.1875V20.25C176.688 22.7604 176.104 24.6823 174.938 26.0156C173.781 27.3385 172.104 28 169.906 28ZM169.953 22.9375C170.786 22.9375 171.203 22.1302 171.203 20.5156V7.09375C171.203 5.73958 170.797 5.0625 169.984 5.0625C169.068 5.0625 168.609 5.75521 168.609 7.14062V20.5469C168.609 21.401 168.714 22.0156 168.922 22.3906C169.13 22.7552 169.474 22.9375 169.953 22.9375Z" fill="currentColor">
+                </path>
+              </svg>
+</a>
+              <div class="menu-wrap">
+                <div data-open-product="" data-wf-cart-type="rightDropdown" data-wf-cart-query="query Dynamo3 {
+  database {
+    id
+    commerceOrder {
+      comment
+      extraItems {
+        name
+        pluginId
+        pluginName
+        price {
+          decimalValue
+          string
+          unit
+          value
+        }
+      }
+      id
+      startedOn
+      statusFlags {
+        hasDownloads
+        hasSubscription
+        isFreeOrder
+        requiresShipping
+      }
+      subtotal {
+        decimalValue
+        string
+        unit
+        value
+      }
+      total {
+        decimalValue
+        string
+        unit
+        value
+      }
+      updatedOn
+      userItems {
+        count
+        id
+        price {
+          value
+          unit
+          decimalValue
+          string
+        }
+        product {
+          id
+          cmsLocaleId
+          draft
+          archived
+          f_ec_product_type_2dr10dr: productType {
+            id
+            name
+          }
+          f_name_: name
+          f_sku_properties_3dr: skuProperties {
+            id
+            name
+            enum {
+              id
+              name
+              slug
+            }
+          }
+        }
+        rowTotal {
+          decimalValue
+          string
+          unit
+          value
+        }
+        sku {
+          cmsLocaleId
+          draft
+          archived
+          f_main_image_4dr: mainImage {
+            url
+            file {
+              size
+              origFileName
+              createdOn
+              updatedOn
+              mimeType
+              width
+              height
+              variants {
+                origFileName
+                quality
+                height
+                width
+                s3Url
+                error
+                size
+              }
+            }
+            alt
+          }
+          f_sku_values_3dr: skuValues {
+            property {
+              id
+            }
+            value {
+              id
+            }
+          }
+          id
+        }
+        subscriptionFrequency
+        subscriptionInterval
+        subscriptionTrial
+      }
+      userItemsCount
+    }
+  }
+  site {
+    commerce {
+      id
+      businessAddress {
+        country
+      }
+      defaultCountry
+      defaultCurrency
+      quickCheckoutEnabled
+    }
+  }
+}" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper" data-node-type="commerce-cart-wrapper">
+                  <a class="w-commerce-commercecartopenlink cart-button w-inline-block" role="button" aria-haspopup="dialog" aria-label="Open cart" data-node-type="commerce-cart-open-link" href="#">                  <div class="cart-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="100%" class="cart-icon">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0">
+                      </g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                      </g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M3.86376 16.4552C3.00581 13.0234 2.57684 11.3075 3.47767 10.1538C4.3785 9 6.14721 9 9.68462 9H14.3153C17.8527 9 19.6214 9 20.5222 10.1538C21.4231 11.3075 20.9941 13.0234 20.1362 16.4552C19.5905 18.6379 19.3176 19.7292 18.5039 20.3646C17.6901 21 16.5652 21 14.3153 21H9.68462C7.43476 21 6.30983 21 5.49605 20.3646C4.68227 19.7292 4.40943 18.6379 3.86376 16.4552Z" stroke="currentColor" stroke-width="1.5">
+                        </path>
+                        <path opacity="0.5" d="M19.5 9.5L18.7896 6.89465C18.5157 5.89005 18.3787 5.38775 18.0978 5.00946C17.818 4.63273 17.4378 4.34234 17.0008 4.17152C16.5619 4 16.0413 4 15 4M4.5 9.5L5.2104 6.89465C5.48432 5.89005 5.62128 5.38775 5.90221 5.00946C6.18199 4.63273 6.56216 4.34234 6.99922 4.17152C7.43808 4 7.95872 4 9 4" stroke="currentColor" stroke-width="1.5">
+                        </path>
+                        <path d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4C15 4.55228 14.5523 5 14 5H10C9.44772 5 9 4.55228 9 4Z" stroke="currentColor" stroke-width="1.5">
+                        </path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItemsCount%22%7D%7D%5D" class="w-commerce-commercecartopenlinkcount cart-quantity">
+                    0
+                  </div>
+</a>
+                  <div style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-rightDropdown" data-node-type="commerce-cart-container-wrapper">
+                    <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer cart-container">
+                      <div class="w-commerce-commercecartheader">
+                        <h4 class="w-commerce-commercecartheading">
+                          Your Cart
+                        </h4>
+                        <a class="w-commerce-commercecartcloselink close-button w-inline-block" role="button" aria-label="Close cart" data-node-type="commerce-cart-close-link">                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="100%" class="close-icon">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0">
+                          </g>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                          </g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                          </g>
+                        </svg>
+</a>
+                      </div>
+                      <div class="w-commerce-commercecartformwrapper">
+                        <form style="display:none" class="w-commerce-commercecartform" data-node-type="commerce-cart-form">
+                          <script type="text/x-wf-template" id="wf-template-aa25199e-4946-408c-7a4d-b2307b4479d6">
+                            %3Cdiv%20class%3D%22w-commerce-commercecartitem%22%3E%3Cimg%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20src%3D%22%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%22%3E%3Cdiv%20class%3D%22cart-flex-wrap%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20checkout-total%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePrice%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522price%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.price%2522%257D%257D%255D%22%20class%3D%22checkout-total%22%3E%24%C2%A00.00%C2%A0USD%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cscript%20type%3D%22text%2Fx-wf-template%22%20id%3D%22wf-template-aa25199e-4946-408c-7a4d-b2307b4479dc%22%3E%253Cli%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522PlainText%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D.name%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253Cspan%253E%253A%2520%253C%252Fspan%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522CommercePropValues%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253C%252Fli%253E%3C%2Fscript%3E%3Cul%20data-wf-bindings%3D%22%255B%257B%2522optionSets%2522%253A%257B%2522type%2522%253A%2522CommercePropTable%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%5B%5D%2522%257D%257D%252C%257B%2522optionValues%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_sku_values_3dr%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3D%22database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%22%20data-wf-template-id%3D%22wf-template-aa25199e-4946-408c-7a4d-b2307b4479dc%22%3E%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3C%2Ful%3E%3Ca%20href%3D%22%23%22%20role%3D%22button%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%20aria-label%3D%22Remove%20item%20from%20cart%22%3E%3Cdiv%20class%3D%22text-block-2%22%3ERemove%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cinput%20aria-label%3D%22Update%20quantity%22%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%257B%2522condition%2522%253A%257B%2522fields%2522%253A%257B%2522product%253Aec-product-type%2522%253A%257B%2522ne%2522%253A%2522e348fd487d0102946c9179d2a94bb613%2522%252C%2522type%2522%253A%2522Option%2522%257D%257D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D%2522%257D%22%20class%3D%22w-commerce-commercecartquantity%20display-none%22%20required%3D%22%22%20pattern%3D%22%5E%5B0-9%5D%2B%24%22%20inputMode%3D%22numeric%22%20type%3D%22number%22%20name%3D%22quantity%22%20autoComplete%3D%22off%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E
+                          </script>
+                          <div class="w-commerce-commercecartlist" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-aa25199e-4946-408c-7a4d-b2307b4479d6">
+                            <div class="w-commerce-commercecartitem">
+                              <img data-wf-bindings="%5B%7B%22src%22%3A%7B%22type%22%3A%22ImageRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_main_image_4dr%22%7D%7D%5D" src="" alt="" class="w-commerce-commercecartitemimage w-dyn-bind-empty" />
+                              <div class="w-commerce-commercecartiteminfo">
+                                <div class="cart-flex-wrap">
+                                  <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_name_%22%7D%7D%5D" class="w-commerce-commercecartproductname checkout-total w-dyn-bind-empty">
+                                  </div>
+                                  <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.price%22%7D%7D%5D" class="checkout-total">
+                                    $ 0.00 USD
+                                  </div>
+                                </div>
+                                <script type="text/x-wf-template" id="wf-template-aa25199e-4946-408c-7a4d-b2307b4479dc">
+                                  %3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E
+                                </script>
+                                <ul data-wf-bindings="%5B%7B%22optionSets%22%3A%7B%22type%22%3A%22CommercePropTable%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr[]%22%7D%7D%2C%7B%22optionValues%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_sku_values_3dr%22%7D%7D%5D" class="w-commerce-commercecartoptionlist" data-wf-collection="database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr" data-wf-template-id="wf-template-aa25199e-4946-408c-7a4d-b2307b4479dc">
+                                  <li>
+                                    <span data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D.name%22%7D%7D%5D" class="w-dyn-bind-empty"></span>
+                                    <span>                                    :
+</span>
+                                    <span data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D%22%7D%7D%5D" class="w-dyn-bind-empty"></span>
+                                  </li>
+                                </ul>
+                                <a href="#" role="button" data-wf-bindings="%5B%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D" class="w-inline-block" data-wf-cart-action="remove-item" data-commerce-sku-id="" aria-label="Remove item from cart">                                <div class="text-block-2">
+                                  Remove
+                                </div>
+</a>
+                              </div>
+                              <input aria-label="Update quantity" data-wf-bindings="%5B%7B%22value%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.count%22%7D%7D%2C%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D" data-wf-conditions="%7B%22condition%22%3A%7B%22fields%22%3A%7B%22product%3Aec-product-type%22%3A%7B%22ne%22%3A%22e348fd487d0102946c9179d2a94bb613%22%2C%22type%22%3A%22Option%22%7D%7D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D%22%7D" class="w-commerce-commercecartquantity display-none" required="" pattern="^[0-9]+$" inputmode="numeric" type="number" name="quantity" autocomplete="off" data-wf-cart-action="update-item-quantity" data-commerce-sku-id="" value="1" />
+                            </div>
+                          </div>
+                          <div class="w-commerce-commercecartfooter">
+                            <div aria-atomic="true" aria-live="polite" class="w-commerce-commercecartlineitem">
+                              <div class="bold">
+                                Subtotal
+                              </div>
+                              <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.subtotal%22%7D%7D%5D" class="w-commerce-commercecartordervalue bold">
+                              </div>
+                            </div>
+                            <div>
+                              <div data-node-type="commerce-cart-quick-checkout-actions" style="display:none">
+                                <a data-node-type="commerce-cart-apple-pay-button" role="button" aria-label="Apple Pay" aria-haspopup="dialog" style="background-image:-webkit-named-image(apple-pay-logo-white);background-size:100% 50%;background-position:50% 50%;background-repeat:no-repeat" class="w-commerce-commercecartapplepaybutton apple-pay" tabindex="0">                                <div>
+                                </div>
+</a>
+                                <a data-node-type="commerce-cart-quick-checkout-button" role="button" tabindex="0" aria-haspopup="dialog" style="display:none" class="w-commerce-commercecartquickcheckoutbutton">                                <svg class="w-commerce-commercequickcheckoutgoogleicon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                  <defs>
+                                    <polygon id="google-mark-a" points="0 .329 3.494 .329 3.494 7.649 0 7.649">
+                                    </polygon>
+                                    <polygon id="google-mark-c" points=".894 0 13.169 0 13.169 6.443 .894 6.443">
+                                    </polygon>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <path fill="#4285F4" d="M10.5967,12.0469 L10.5967,14.0649 L13.1167,14.0649 C14.6047,12.6759 15.4577,10.6209 15.4577,8.1779 C15.4577,7.6339 15.4137,7.0889 15.3257,6.5559 L7.8887,6.5559 L7.8887,9.6329 L12.1507,9.6329 C11.9767,10.6119 11.4147,11.4899 10.5967,12.0469">
+                                    </path>
+                                    <path fill="#34A853" d="M7.8887,16 C10.0137,16 11.8107,15.289 13.1147,14.067 C13.1147,14.066 13.1157,14.065 13.1167,14.064 L10.5967,12.047 C10.5877,12.053 10.5807,12.061 10.5727,12.067 C9.8607,12.556 8.9507,12.833 7.8887,12.833 C5.8577,12.833 4.1387,11.457 3.4937,9.605 L0.8747,9.605 L0.8747,11.648 C2.2197,14.319 4.9287,16 7.8887,16">
+                                    </path>
+                                    <g transform="translate(0 4)">
+                                      <mask id="google-mark-b" fill="#fff">
+                                        <use href="#google-mark-a">
+                                        </use>
+                                      </mask>
+                                      <path fill="#FBBC04" d="M3.4639,5.5337 C3.1369,4.5477 3.1359,3.4727 3.4609,2.4757 L3.4639,2.4777 C3.4679,2.4657 3.4749,2.4547 3.4789,2.4427 L3.4939,0.3287 L0.8939,0.3287 C0.8799,0.3577 0.8599,0.3827 0.8459,0.4117 C-0.2821,2.6667 -0.2821,5.3337 0.8459,7.5887 L0.8459,7.5997 C0.8549,7.6167 0.8659,7.6317 0.8749,7.6487 L3.4939,5.6057 C3.4849,5.5807 3.4729,5.5587 3.4639,5.5337" mask="url(#google-mark-b)">
+                                      </path>
+                                    </g>
+                                    <mask id="google-mark-d" fill="#fff">
+                                      <use href="#google-mark-c">
+                                      </use>
+                                    </mask>
+                                    <path fill="#EA4335" d="M0.894,4.3291 L3.478,6.4431 C4.113,4.5611 5.843,3.1671 7.889,3.1671 C9.018,3.1451 10.102,3.5781 10.912,4.3671 L13.169,2.0781 C11.733,0.7231 9.85,-0.0219 7.889,0.0001 C4.941,0.0001 2.245,1.6791 0.894,4.3291" mask="url(#google-mark-d)">
+                                    </path>
+                                  </g>
+                                </svg>
+                                <svg class="w-commerce-commercequickcheckoutmicrosofticon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                  <g fill="none" fill-rule="evenodd">
+                                    <polygon fill="#F05022" points="7 7 1 7 1 1 7 1">
+                                    </polygon>
+                                    <polygon fill="#7DB902" points="15 7 9 7 9 1 15 1">
+                                    </polygon>
+                                    <polygon fill="#00A4EE" points="7 15 1 15 1 9 7 9">
+                                    </polygon>
+                                    <polygon fill="#FFB700" points="15 15 9 15 9 9 15 9">
+                                    </polygon>
+                                  </g>
+                                </svg>
+                                <div>
+                                  Pay with browser.
+                                </div>
+</a>
+                              </div>
+                              <a href="/checkout" value="Continue to Checkout" class="w-commerce-commercecartcheckoutbutton checkout-submit-button" data-loading-text="Hang Tight..." data-node-type="cart-checkout-button">                              Continue to Checkout
+</a>
+                            </div>
+                          </div>
+                        </form>
+                        <div class="w-commerce-commercecartemptystate">
+                          <div aria-label="This cart is empty" aria-live="polite">
+                            No items found.
+                          </div>
+                        </div>
+                        <div aria-live="assertive" style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate error-message">
+                          <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">
+                            Product is not available in this quantity.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-menu="open" class="nav-menu-button">
+                  <div menu-text="" class="menu-text w-variant-181a410a-7f17-f90c-3d7e-33139ec58f3a">
+                    Menu
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" menu="" class="menu-icon w-variant-181a410a-7f17-f90c-3d7e-33139ec58f3a">
+                    <path d="M3.8999 4.8H20.0999V6.6H3.8999V4.8ZM9.2999 11.1H20.0999V12.9H9.2999V11.1ZM3.8999 17.4H20.0999V19.2H3.8999V17.4Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <div class="nav-button-compotent">
+                    <div menu="line-1" class="menu-line _01">
+                    </div>
+                    <div menu="line-2" class="menu-line _02">
+                    </div>
+                    <div menu="line-3" class="menu-line _03">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu-wrap">
+          <div class="nav">
+            <div class="container">
+              <div data-animation="nav" class="nav-wrapper">
+                <a href="/" aria-current="page" class="nav-logo w-inline-block w--current">                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 181 28" fill="none" class="brand-logo">
+                  <path d="M6.625 28C4.63542 28 3.03125 27.3802 1.8125 26.1406C0.604167 24.901 0 23.1667 0 20.9375V8.25C0 5.58333 0.526042 3.54167 1.57812 2.125C2.64062 0.708333 4.36458 0 6.75 0C8.05208 0 9.20833 0.239583 10.2188 0.71875C11.2396 1.19792 12.0417 1.91667 12.625 2.875C13.2083 3.82292 13.5 5.02083 13.5 6.46875V11.2188H8.03125V7.15625C8.03125 6.33333 7.92708 5.78125 7.71875 5.5C7.51042 5.20833 7.1875 5.0625 6.75 5.0625C6.23958 5.0625 5.89583 5.25 5.71875 5.625C5.54167 5.98958 5.45312 6.47917 5.45312 7.09375V20.8594C5.45312 21.6198 5.5625 22.1562 5.78125 22.4688C6.01042 22.7812 6.33333 22.9375 6.75 22.9375C7.21875 22.9375 7.54688 22.7448 7.73438 22.3594C7.93229 21.974 8.03125 21.474 8.03125 20.8594V15.9062H13.5625V21.1094C13.5625 23.526 12.9531 25.2812 11.7344 26.375C10.5156 27.4583 8.8125 28 6.625 28ZM15.4062 27.75V0.25H23.8438C25.25 0.25 26.3125 0.572917 27.0312 1.21875C27.75 1.85417 28.2292 2.75 28.4688 3.90625C28.7188 5.05208 28.8438 6.40104 28.8438 7.95312C28.8438 9.45312 28.651 10.651 28.2656 11.5469C27.8906 12.4427 27.1771 13.0625 26.125 13.4062C26.9896 13.5833 27.5938 14.0156 27.9375 14.7031C28.2917 15.3802 28.4688 16.2604 28.4688 17.3438V27.75H23.0469V16.9844C23.0469 16.1823 22.8802 15.6875 22.5469 15.5C22.224 15.3021 21.6979 15.2031 20.9688 15.2031V27.75H15.4062ZM21 10.4375H22.3281C23.0885 10.4375 23.4688 9.60938 23.4688 7.95312C23.4688 6.88021 23.3854 6.17708 23.2188 5.84375C23.0521 5.51042 22.7396 5.34375 22.2812 5.34375H21V10.4375ZM30.6562 27.75V0.25H41.6562V5.5625H36.25V10.9219H41.4375V16.0938H36.25V22.3906H42.0156V27.75H30.6562ZM43.0938 27.75L45.75 0.25H55.0781L57.6875 27.75H52.4844L52.0938 23.3125H48.7812L48.4375 27.75H43.0938ZM49.1719 18.9219H51.6719L50.4688 4.9375H50.2188L49.1719 18.9219ZM61.3281 27.75V5.53125H58.0625V0.25H70.0938V5.53125H66.8281V27.75H61.3281ZM71.375 27.75V0.25H76.6875V27.75H71.375ZM78.0781 27.75L81.0312 13.1719L78.6875 0.234375H84.0625L85.4844 9.6875L86.75 0.234375H92.1406L89.7969 13.1719L92.7344 27.75H87.1719L85.4375 17L83.6562 27.75H78.0781ZM108.406 28C105.896 28 104.083 27.375 102.969 26.125C101.865 24.875 101.312 22.8854 101.312 20.1562V17.4688H106.75V20.9062C106.75 21.5417 106.844 22.0417 107.031 22.4062C107.229 22.7604 107.568 22.9375 108.047 22.9375C108.547 22.9375 108.891 22.7917 109.078 22.5C109.276 22.2083 109.375 21.7292 109.375 21.0625C109.375 20.2188 109.292 19.5156 109.125 18.9531C108.958 18.3802 108.667 17.8385 108.25 17.3281C107.844 16.8073 107.276 16.2031 106.547 15.5156L104.078 13.1719C102.234 11.4323 101.312 9.44271 101.312 7.20312C101.312 4.85938 101.854 3.07292 102.938 1.84375C104.031 0.614583 105.609 0 107.672 0C110.193 0 111.979 0.671875 113.031 2.01562C114.094 3.35938 114.625 5.40104 114.625 8.14062H109.031V6.25C109.031 5.875 108.922 5.58333 108.703 5.375C108.495 5.16667 108.208 5.0625 107.844 5.0625C107.406 5.0625 107.083 5.1875 106.875 5.4375C106.677 5.67708 106.578 5.98958 106.578 6.375C106.578 6.76042 106.682 7.17708 106.891 7.625C107.099 8.07292 107.51 8.58854 108.125 9.17188L111.297 12.2188C111.932 12.8229 112.516 13.4635 113.047 14.1406C113.578 14.8073 114.005 15.5885 114.328 16.4844C114.651 17.3698 114.812 18.4531 114.812 19.7344C114.812 22.3177 114.333 24.3438 113.375 25.8125C112.427 27.2708 110.771 28 108.406 28ZM119.016 27.75V5.53125H115.75V0.25H127.781V5.53125H124.516V27.75H119.016ZM135.672 28C133.38 28 131.693 27.3594 130.609 26.0781C129.526 24.7865 128.984 22.8906 128.984 20.3906V0.25H134.328V20.1719C134.328 20.6302 134.354 21.0729 134.406 21.5C134.458 21.9167 134.578 22.2604 134.766 22.5312C134.953 22.8021 135.255 22.9375 135.672 22.9375C136.099 22.9375 136.406 22.8073 136.594 22.5469C136.781 22.276 136.896 21.9271 136.938 21.5C136.99 21.0729 137.016 20.6302 137.016 20.1719V0.25H142.359V20.3906C142.359 22.8906 141.818 24.7865 140.734 26.0781C139.651 27.3594 137.964 28 135.672 28ZM144.469 27.75V0.25H152.031C154.01 0.25 155.5 0.802083 156.5 1.90625C157.5 3 158 4.60417 158 6.71875V19.5938C158 22.1979 157.542 24.2083 156.625 25.625C155.719 27.0417 154.125 27.75 151.844 27.75H144.469ZM150 22.8906H150.953C151.964 22.8906 152.469 22.401 152.469 21.4219V7.23438C152.469 6.31771 152.344 5.72917 152.094 5.46875C151.854 5.19792 151.359 5.0625 150.609 5.0625H150V22.8906ZM160 27.75V0.25H165.312V27.75H160ZM174.062 28C171.865 28 170.182 27.3385 169.016 26.0156C167.859 24.6823 167.281 22.7604 167.281 20.25V7.1875C167.281 4.83333 167.854 3.04688 169 1.82812C170.156 0.609375 171.844 0 174.062 0C176.281 0 177.964 0.609375 179.109 1.82812C180.266 3.04688 180.844 4.83333 180.844 7.1875V20.25C180.844 22.7604 180.26 24.6823 179.094 26.0156C177.938 27.3385 176.26 28 174.062 28ZM174.109 22.9375C174.943 22.9375 175.359 22.1302 175.359 20.5156V7.09375C175.359 5.73958 174.953 5.0625 174.141 5.0625C173.224 5.0625 172.766 5.75521 172.766 7.14062V20.5469C172.766 21.401 172.87 22.0156 173.078 22.3906C173.286 22.7552 173.63 22.9375 174.109 22.9375Z" fill="currentColor">
+                  </path>
+                </svg>
+</a>
+                <div data-menu="close" class="nav-menu-button">
+                  <div class="menu-text w-variant-181a410a-7f17-f90c-3d7e-33139ec58f3a">
+                    Close
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="menu-icon w-variant-181a410a-7f17-f90c-3d7e-33139ec58f3a">
+                    <path d="M10.8217 12L4.32764 5.5059L5.50615 4.32739L12.0002 10.8214L18.4943 4.32739L19.6728 5.5059L13.1787 12L19.6728 18.494L18.4943 19.6726L12.0002 13.1785L5.50615 19.6726L4.32764 18.494L10.8217 12Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <div class="nav-button-compotent">
+                    <div menu="line-1" class="menu-line _01">
+                    </div>
+                    <div menu="line-2" class="menu-line _02">
+                    </div>
+                    <div menu="line-3" class="menu-line _03">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="nav-menu">
+            <div class="container">
+              <div class="nav-item-grid">
+                <div nav="menu" class="nav-item-column">
+                  <a href="/" aria-current="page" class="navigation-link w-inline-block w--current">                  <div nav-link="top" class="navigation-link-text">
+                    Home
+                  </div>
+                  <div nav-link="bottom" class="navigation-link-text">
+                    Home
+                  </div>
+</a>
+                  <a href="/about" class="navigation-link w-inline-block">                  <div nav-link="top" class="navigation-link-text">
+                    About us
+                  </div>
+                  <div nav-link="bottom" class="navigation-link-text">
+                    About us
+                  </div>
+</a>
+                  <a href="/work" class="navigation-link w-inline-block">                  <div nav-link="top" class="navigation-link-text">
+                    Work
+                  </div>
+                  <div nav-link="bottom" class="navigation-link-text">
+                    Work
+                  </div>
+</a>
+                  <a href="/price" class="navigation-link w-inline-block">                  <div nav-link="top" class="navigation-link-text">
+                    Pricing
+                  </div>
+                  <div nav-link="bottom" class="navigation-link-text">
+                    Pricing
+                  </div>
+</a>
+                  <a href="/blog" class="navigation-link w-inline-block">                  <div nav-link="top" class="navigation-link-text">
+                    Blogs
+                  </div>
+                  <div nav-link="bottom" class="navigation-link-text">
+                    Blogs
+                  </div>
+</a>
+                </div>
+                <div class="nav-item-column-wrap">
+                  <div nav="menu" class="nav-item-column">
+                    <a href="/career" class="navigation-link w-inline-block">                    <div nav-link="top" class="navigation-link-text">
+                      Career
+                    </div>
+                    <div nav-link="bottom" class="navigation-link-text">
+                      Career
+                    </div>
+</a>
+                    <a href="/contact" class="navigation-link w-inline-block">                    <div nav-link="top" class="navigation-link-text">
+                      Contact
+                    </div>
+                    <div nav-link="bottom" class="navigation-link-text">
+                      Contact
+                    </div>
+</a>
+                  </div>
+                  <div class="nav-info-wrap">
+                    <div class="nav-social-link">
+                      <a href="#" class="footer-info-link w-inline-block">                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="footer-icon">
+                        <path d="M11.9999 20.0099L16.4549 15.5549C17.3359 14.6738 17.9359 13.5513 18.1789 12.3292C18.4219 11.1072 18.2971 9.84047 17.8203 8.68933C17.3434 7.53819 16.5359 6.55431 15.4999 5.86208C14.4639 5.16986 13.2459 4.80038 11.9999 4.80038C10.7539 4.80038 9.5359 5.16986 8.49988 5.86208C7.46386 6.55431 6.65638 7.53819 6.17953 8.68933C5.70268 9.84047 5.57788 11.1072 5.82091 12.3292C6.06395 13.5513 6.6639 14.6738 7.54491 15.5549L11.9999 20.0099ZM11.9999 22.5551L6.27231 16.8275C5.13951 15.6947 4.36807 14.2514 4.05554 12.6802C3.74301 11.109 3.90342 9.48032 4.51649 8.00024C5.12956 6.52017 6.16776 5.25512 7.4998 4.36509C8.83183 3.47505 10.3979 3 11.9999 3C13.6019 3 15.168 3.47505 16.5 4.36509C17.832 5.25512 18.8702 6.52017 19.4833 8.00024C20.0964 9.48032 20.2568 11.109 19.9443 12.6802C19.6317 14.2514 18.8603 15.6947 17.7275 16.8275L11.9999 22.5551ZM11.9999 12.8999C12.4773 12.8999 12.9351 12.7103 13.2727 12.3727C13.6103 12.0352 13.7999 11.5773 13.7999 11.0999C13.7999 10.6225 13.6103 10.1647 13.2727 9.82714C12.9351 9.48957 12.4773 9.29993 11.9999 9.29993C11.5225 9.29993 11.0647 9.48957 10.7271 9.82714C10.3895 10.1647 10.1999 10.6225 10.1999 11.0999C10.1999 11.5773 10.3895 12.0352 10.7271 12.3727C11.0647 12.7103 11.5225 12.8999 11.9999 12.8999ZM11.9999 14.6999C11.0451 14.6999 10.1295 14.3206 9.45432 13.6455C8.77919 12.9704 8.39991 12.0547 8.39991 11.0999C8.39991 10.1452 8.77919 9.22948 9.45432 8.55434C10.1295 7.87921 11.0451 7.49993 11.9999 7.49993C12.9547 7.49993 13.8704 7.87921 14.5455 8.55434C15.2206 9.22948 15.5999 10.1452 15.5999 11.0999C15.5999 12.0547 15.2206 12.9704 14.5455 13.6455C13.8704 14.3206 12.9547 14.6999 11.9999 14.6999Z" fill="currentColor">
+                        </path>
+                      </svg>
+                      <div>
+                        New York, NY / Remote
+                      </div>
+</a>
+                      <a href="#" class="footer-info-link w-inline-block">                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="footer-icon">
+                        <path d="M9.6293 10.8137C10.4738 12.2973 11.7025 13.526 13.1861 14.3705L13.9817 13.2563C14.1096 13.0771 14.2988 12.9511 14.5134 12.902C14.728 12.8529 14.9532 12.8842 15.1463 12.9899C16.4192 13.6855 17.8249 14.1039 19.271 14.2175C19.4967 14.2354 19.7074 14.3377 19.861 14.504C20.0146 14.6703 20.0999 14.8884 20.0999 15.1148V19.1306C20.1 19.3534 20.0173 19.5684 19.868 19.7338C19.7187 19.8992 19.5134 20.0034 19.2917 20.0261C18.8147 20.0756 18.3341 20.0999 17.8499 20.0999C10.1459 20.0999 3.8999 13.8539 3.8999 6.1499C3.8999 5.6657 3.9242 5.1851 3.9737 4.7081C3.99643 4.48643 4.10059 4.28107 4.26601 4.13177C4.43144 3.98247 4.64637 3.89985 4.8692 3.8999H8.885C9.11141 3.89987 9.32951 3.98518 9.49582 4.13881C9.66212 4.29244 9.76442 4.5031 9.7823 4.7288C9.8959 6.17492 10.3143 7.58061 11.0099 8.8535C11.1156 9.04661 11.1469 9.27177 11.0978 9.48638C11.0487 9.70099 10.9227 9.89016 10.7435 10.0181L9.6293 10.8137ZM7.3595 10.2224L9.0695 9.0011C8.58421 7.95359 8.25172 6.84186 8.0822 5.6999H5.7089C5.7035 5.8493 5.7008 5.9996 5.7008 6.1499C5.6999 12.8603 11.1395 18.2999 17.8499 18.2999C18.0002 18.2999 18.1505 18.2972 18.2999 18.2909V15.9176C17.1579 15.7481 16.0462 15.4156 14.9987 14.9303L13.7774 16.6403C13.2857 16.4492 12.8081 16.2237 12.3482 15.9653L12.296 15.9356C10.5307 14.9309 9.06885 13.4691 8.0642 11.7038L8.0345 11.6516C7.77612 11.1917 7.55056 10.7141 7.3595 10.2224Z" fill="currentColor">
+                        </path>
+                      </svg>
+                      <div>
+                        +1 (234) 567-8910
+                      </div>
+</a>
+                      <a href="#" class="footer-info-link w-inline-block">                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="footer-icon">
+                        <path d="M3.9 4.5H20.1C20.3387 4.5 20.5676 4.59482 20.7364 4.7636C20.9052 4.93239 21 5.16131 21 5.4V18.6C21 18.8387 20.9052 19.0676 20.7364 19.2364C20.5676 19.4052 20.3387 19.5 20.1 19.5H3.9C3.66131 19.5 3.43239 19.4052 3.2636 19.2364C3.09482 19.0676 3 18.8387 3 18.6V5.4C3 5.16131 3.09482 4.93239 3.2636 4.7636C3.43239 4.59482 3.66131 4.5 3.9 4.5ZM19.2 8.3142L12.0648 14.7042L4.8 8.2944V17.7H19.2V8.3142ZM5.2599 6.3L12.0549 12.2958L18.7518 6.3H5.2599Z" fill="currentColor">
+                        </path>
+                      </svg>
+                      <div>
+                        hello@creatixStudio.com
+                      </div>
+</a>
+                    </div>
+                    <div class="navbar-social-link">
+                      <a aria-label="Link Block" data-w-id="953960f7-a967-7f73-b1a1-c4d307e86b9d" href="https://www.discord.com" target="_blank" class="socail-single-link w-inline-block">                      <div class="socail-icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon">
+                          <path d="M16.1708 4.4619C15.0028 3.92715 13.7697 3.54779 12.5031 3.3335C12.3298 3.64334 12.173 3.96212 12.0333 4.28851C10.6841 4.08521 9.31207 4.08521 7.96289 4.28851C7.82315 3.96215 7.66632 3.64337 7.49307 3.3335C6.22565 3.5496 4.99177 3.92986 3.82258 4.46469C1.50144 7.89883 0.872209 11.2477 1.18682 14.549C2.54614 15.5533 4.06761 16.3171 5.68509 16.8072C6.0493 16.3173 6.37158 15.7977 6.64851 15.2537C6.12252 15.0573 5.61485 14.8149 5.13137 14.5294C5.25862 14.4371 5.38306 14.342 5.50332 14.2498C6.91012 14.9113 8.44558 15.2544 10.0002 15.2544C11.5548 15.2544 13.0903 14.9113 14.4971 14.2498C14.6187 14.349 14.7432 14.4441 14.869 14.5294C14.3846 14.8154 13.876 15.0582 13.3491 15.2551C13.6257 15.7988 13.948 16.318 14.3125 16.8072C15.9313 16.3191 17.454 15.5556 18.8136 14.5504C19.1827 10.7219 18.1829 7.40385 16.1708 4.4619ZM7.04702 12.5187C6.1703 12.5187 5.44599 11.7231 5.44599 10.7443C5.44599 9.76552 6.14513 8.96291 7.04422 8.96291C7.94332 8.96291 8.66203 9.76552 8.64665 10.7443C8.63127 11.7231 7.94052 12.5187 7.04702 12.5187ZM12.9534 12.5187C12.0752 12.5187 11.3537 11.7231 11.3537 10.7443C11.3537 9.76552 12.0529 8.96291 12.9534 8.96291C13.8538 8.96291 14.567 9.76552 14.5516 10.7443C14.5362 11.7231 13.8469 12.5187 12.9534 12.5187Z" fill="currentColor">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon hover">
+                          <path d="M16.1708 4.4619C15.0028 3.92715 13.7697 3.54779 12.5031 3.3335C12.3298 3.64334 12.173 3.96212 12.0333 4.28851C10.6841 4.08521 9.31207 4.08521 7.96289 4.28851C7.82315 3.96215 7.66632 3.64337 7.49307 3.3335C6.22565 3.5496 4.99177 3.92986 3.82258 4.46469C1.50144 7.89883 0.872209 11.2477 1.18682 14.549C2.54614 15.5533 4.06761 16.3171 5.68509 16.8072C6.0493 16.3173 6.37158 15.7977 6.64851 15.2537C6.12252 15.0573 5.61485 14.8149 5.13137 14.5294C5.25862 14.4371 5.38306 14.342 5.50332 14.2498C6.91012 14.9113 8.44558 15.2544 10.0002 15.2544C11.5548 15.2544 13.0903 14.9113 14.4971 14.2498C14.6187 14.349 14.7432 14.4441 14.869 14.5294C14.3846 14.8154 13.876 15.0582 13.3491 15.2551C13.6257 15.7988 13.948 16.318 14.3125 16.8072C15.9313 16.3191 17.454 15.5556 18.8136 14.5504C19.1827 10.7219 18.1829 7.40385 16.1708 4.4619ZM7.04702 12.5187C6.1703 12.5187 5.44599 11.7231 5.44599 10.7443C5.44599 9.76552 6.14513 8.96291 7.04422 8.96291C7.94332 8.96291 8.66203 9.76552 8.64665 10.7443C8.63127 11.7231 7.94052 12.5187 7.04702 12.5187ZM12.9534 12.5187C12.0752 12.5187 11.3537 11.7231 11.3537 10.7443C11.3537 9.76552 12.0529 8.96291 12.9534 8.96291C13.8538 8.96291 14.567 9.76552 14.5516 10.7443C14.5362 11.7231 13.8469 12.5187 12.9534 12.5187Z" fill="currentColor">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="socail-icon-bg">
+                      </div>
+</a>
+                      <a aria-label="Link Block" data-w-id="953960f7-a967-7f73-b1a1-c4d307e86ba4" href="https://www.facebook.com" target="_blank" class="socail-single-link w-inline-block">                      <div class="socail-icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon">
+                          <path d="M14.2067 11.3307L14.8222 7.95576H11.2398V6.76214C11.2398 4.97862 11.9346 4.29269 13.733 4.29269C14.2915 4.29269 14.7411 4.30638 15 4.33382V1.27443C14.5095 1.13722 13.3106 1 12.6158 1C8.95096 1 7.26158 2.74239 7.26158 6.50149V7.95576H5V11.3307H7.26158V18.6748C8.11015 18.8867 8.99742 19 9.91105 19C10.3609 19 10.8042 18.9721 11.2398 18.9191V11.3307H14.2067Z" fill="currentColor">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon hover">
+                          <path d="M14.2067 11.3307L14.8222 7.95576H11.2398V6.76214C11.2398 4.97862 11.9346 4.29269 13.733 4.29269C14.2915 4.29269 14.7411 4.30638 15 4.33382V1.27443C14.5095 1.13722 13.3106 1 12.6158 1C8.95096 1 7.26158 2.74239 7.26158 6.50149V7.95576H5V11.3307H7.26158V18.6748C8.11015 18.8867 8.99742 19 9.91105 19C10.3609 19 10.8042 18.9721 11.2398 18.9191V11.3307H14.2067Z" fill="currentColor">
+                          </path>
+                        </svg>
+                      </div>
+                      <div class="socail-icon-bg">
+                      </div>
+</a>
+                      <a aria-label="Link Block" data-w-id="953960f7-a967-7f73-b1a1-c4d307e86bab" href="https://www.instragram.com" target="_blank" class="socail-single-link w-inline-block">                      <div class="socail-icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="social-icon">
+                          <path d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z" stroke="currentColor" stroke-width="2">
+                          </path>
+                          <circle cx="16.5" cy="7.5" r="1.5" fill="currentColor">
+                          </circle>
+                          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2">
+                          </circle>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="social-icon hover">
+                          <path d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z" stroke="currentColor" stroke-width="2">
+                          </path>
+                          <circle cx="16.5" cy="7.5" r="1.5" fill="currentColor">
+                          </circle>
+                          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2">
+                          </circle>
+                        </svg>
+                      </div>
+                      <div class="socail-icon-bg">
+                      </div>
+</a>
+                      <a aria-label="Link Block" data-w-id="953960f7-a967-7f73-b1a1-c4d307e86bb6" href="https://www.linkedin.com" target="_blank" class="socail-single-link w-inline-block">                      <div class="socail-icon-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon">
+                          <g clip-path="url(#clip0_48_1622)">
+                            <path d="M2.49922 18H5.49922V6.9H2.49922V18ZM3.99922 2C2.99922 2 2.19922 2.8 2.19922 3.8C2.19922 4.8 2.99922 5.6 3.99922 5.6C4.99922 5.6 5.79922 4.8 5.79922 3.8C5.79922 2.8 4.99922 2 3.99922 2ZM10.5992 8.6V6.9H7.59922V18H10.5992V12.3C10.5992 9.1 14.6992 8.9 14.6992 12.3V18H17.6992V11.2C17.6992 5.8 11.9992 6 10.5992 8.6Z" fill="currentColor">
+                            </path>
+                          </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon hover">
+                          <g clip-path="url(#clip0_48_1622)">
+                            <path d="M2.49922 18H5.49922V6.9H2.49922V18ZM3.99922 2C2.99922 2 2.19922 2.8 2.19922 3.8C2.19922 4.8 2.99922 5.6 3.99922 5.6C4.99922 5.6 5.79922 4.8 5.79922 3.8C5.79922 2.8 4.99922 2 3.99922 2ZM10.5992 8.6V6.9H7.59922V18H10.5992V12.3C10.5992 9.1 14.6992 8.9 14.6992 12.3V18H17.6992V11.2C17.6992 5.8 11.9992 6 10.5992 8.6Z" fill="currentColor">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="socail-icon-bg">
+                      </div>
+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="main">
+        <section remove-flicker="" class="hero-section">
+          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202.webp" loading="lazy" sizes="(max-width: 2880px) 100vw, 2880px" srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-500.webp 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-800.webp 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-1080.webp 1080w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-1600.webp 1600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-2000.webp 2000w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-2600.webp 2600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202.webp 2880w" alt="Hero Image" class="hero-image" />
+          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203.jpg" loading="lazy" sizes="(max-width: 5760px) 100vw, 5760px" srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203-p-500.jpg 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203-p-800.jpg 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203-p-1600.jpg 1600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203-p-2000.jpg 2000w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203-p-2600.jpg 2600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203-p-3200.jpg 3200w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90996370cb2fb545ed5d_Hero%20Section%203.jpg 5760w" alt="Hero Image" class="hero-image three" />
+          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer.jpg" loading="lazy" sizes="(max-width: 5760px) 100vw, 5760px" srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer-p-500.jpg 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer-p-800.jpg 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer-p-1080.jpg 1080w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer-p-1600.jpg 1600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer-p-2000.jpg 2000w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer-p-2600.jpg 2600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer-p-3200.jpg 3200w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099175834d1d91f39dc_developer.jpg 5760w" alt="Hero Image" class="hero-image two" />
+          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202.webp" loading="lazy" sizes="(max-width: 2880px) 100vw, 2880px" srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-500.webp 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-800.webp 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-1080.webp 1080w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-1600.webp 1600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-2000.webp 2000w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-2600.webp 2600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202.webp 2880w" alt="Hero Image" class="hero-image one" />
+          <div class="container">
+            <div class="hero-main">
+              <div class="hero-content-wrapper">
+                <div class="hero-heading-content">
+                  <div class="hero-title-wrap">
+                    <h1 data-text="animate" class="hero-title two">
+                      smart Designer
+                    </h1>
+                    <h1 data-text="animate" class="hero-title one">
+                      smart Developer
+                    </h1>
+                    <h1 data-text="animate" class="hero-title three">
+                      smart branding
+                    </h1>
+                  </div>
+                  <div class="hero-info-wrap">
+                    <div class="hero-description-wrap">
+                      <p class="hero-description">
+                        We are a creative agency that blends strategy, design, and technology to build meaningful digital solutions for modern businesses.
+                      </p>
+                      <div class="hero-button-wrap">
+                        <a button="" data-wf--button-primary--variant="white" href="/contact" class="button w-variant-286bdd67-4675-06b9-e8ef-63b13e8821db w-inline-block">                        <div class="button-link-text">
+                          <div class="button-link-text-wrap">
+                            <div button-text="top" class="button-text">
+                              Lets Contact
+                            </div>
+                            <div button-text="bottom" class="button-text">
+                              Lets Contact
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-icon-wrap w-variant-286bdd67-4675-06b9-e8ef-63b13e8821db">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                            <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                            <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                            </path>
+                          </svg>
+                        </div>
+</a>
+                      </div>
+                    </div>
+                    <div class="hero-client-info">
+                      <div class="hero-avater-wrapper">
+                        <div class="hero-avater-wrap">
+                          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6929dbfe9dd24b934d79f9aa_avater%2001.png" loading="lazy" alt="Hero Avater" class="hero-avater" />
+                        </div>
+                        <div class="hero-avater-wrap secondary">
+                          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6929dbfeda890bfcca555ad9_avater%2002.png" loading="lazy" alt="Hero Avater" class="hero-avater" />
+                        </div>
+                        <div class="hero-avater-wrap secondary">
+                          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6929dbfd5273be06d7541196_avater%2003.png" loading="lazy" alt="Hero Avater" class="hero-avater" />
+                        </div>
+                        <div class="hero-avater-wrap secondary">
+                          <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6929dbfdb8e662cc698a62bc_avater%2004.png" loading="lazy" alt="Hero Avater" class="hero-avater" />
+                        </div>
+                      </div>
+                      <p class="review-text">
+                        1200+ Customers Review
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-slider-thums-wrapper">
+                  <div class="hero-logo-wrapper">
+                    <div class="hero-logo-wrap">
+                      <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6945a728e7de853768dcc625_Fictional%20company%20logo.svg" loading="lazy" alt="" class="hero-logo-image" />
+                    </div>
+                    <div class="hero-logo-wrap">
+                      <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6945a728c04b4099cfbc0bfc_Fictional%20company%20logo%202.svg" loading="lazy" alt="" class="hero-logo-image" />
+                    </div>
+                    <div class="hero-logo-wrap">
+                      <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6945a72869ad2285a0a18181_Fictional%20company%20logo%203.svg" loading="lazy" alt="" class="hero-logo-image" />
+                    </div>
+                    <div class="hero-shape">
+                    </div>
+                  </div>
+                  <div class="hero-slider-thums-wrap">
+                    <div class="hero-slider-thums">
+                      <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202.webp" loading="lazy" width="1440" sizes="100vw" alt="Woman with curly hair wearing a white VR headset looking upward against a plain blue background." srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-500.webp 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-800.webp 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-1080.webp 1080w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-1600.webp 1600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-2000.webp 2000w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202-p-2600.webp 2600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6930982c48d93d8f4b732f01_hero%20image%202.webp 2880w" class="hero-thumbs-image" />
+                      <div class="thums-border-top one">
+                      </div>
+                      <div class="thums-border-right one">
+                      </div>
+                      <div class="thums-border-bottom one">
+                      </div>
+                      <div class="thums-border-left one">
+                      </div>
+                    </div>
+                    <div class="hero-slider-thums">
+                      <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099c2385b84e5533f27_developer-small.png" loading="lazy" width="1440" sizes="100vw" alt="Person wearing a red cap and green sweater sitting sideways on a block, working on a laptop displaying code." srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099c2385b84e5533f27_developer-small-p-500.png 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099c2385b84e5533f27_developer-small-p-800.png 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d9099c2385b84e5533f27_developer-small.png 804w" class="hero-thumbs-image" />
+                      <div class="thums-border-top two">
+                      </div>
+                      <div class="thums-border-right two">
+                      </div>
+                      <div class="thums-border-bottom two">
+                      </div>
+                      <div class="thums-border-left two">
+                      </div>
+                    </div>
+                    <div class="hero-slider-thums">
+                      <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90984ba430a50d2af541_branding-small.png" loading="lazy" width="1440" sizes="100vw" alt="Silhouette of a hand holding a small dropper bottle against a light background." srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90984ba430a50d2af541_branding-small-p-500.png 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90984ba430a50d2af541_branding-small-p-800.png 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/699d90984ba430a50d2af541_branding-small.png 804w" class="hero-thumbs-image" />
+                      <div class="thums-border-top three">
+                      </div>
+                      <div class="thums-border-right three">
+                      </div>
+                      <div class="thums-border-bottom three">
+                      </div>
+                      <div class="thums-border-left three">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-bg">
+          </div>
+          <div class="bg-overlay">
+          </div>
+        </section>
+        <section data-w-id="1c88420d-2e6b-9f76-efbe-d6522939750b" class="about-section">
+          <div class="design-sticky-wrap">
+            <div class="container">
+              <div class="design-wrapper">
+                <div class="design-top-wrap">
+                  <div class="section-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="section-badge-icon">
+                      <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                      </path>
+                    </svg>
+                    <div class="section-badge-text">
+                      About us
+                    </div>
+                  </div>
+                  <div class="design-content-wrap">
+                    <h2 class="deesign-title">
+                      <span class="text-gray _01">                      we
+</span>
+                      <span class="text-gray _02">                      are
+</span>
+                      <span class="text-gray _03">                      your
+</span>
+                      <span class="text-gray _04">                      strategic
+</span>
+                      <span class="text-gray _05">                      growth
+</span>
+                      <span class="text-gray _06">                      partner
+</span>
+                    </h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 136 136" fill="none" class="deesign-icon">
+                      <path d="M68 0L73.1039 48.9519L102 9.11027L81.9441 54.0559L126.89 34L87.0481 62.8961L136 68L87.0481 73.1039L126.89 102L81.9441 81.9441L102 126.89L73.1039 87.0481L68 136L62.8961 87.0481L34 126.89L54.0559 81.9441L9.11027 102L48.9519 73.1039L0 68L48.9519 62.8961L9.11027 34L54.0559 54.0559L34 9.11027L62.8961 48.9519L68 0Z" fill="currentColor">
+                      </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 136 136" fill="none" class="circle-icon">
+                      <path d="M68 0L73.1039 48.9519L102 9.11027L81.9441 54.0559L126.89 34L87.0481 62.8961L136 68L87.0481 73.1039L126.89 102L81.9441 81.9441L102 126.89L73.1039 87.0481L68 136L62.8961 87.0481L34 126.89L54.0559 81.9441L9.11027 102L48.9519 73.1039L0 68L48.9519 62.8961L9.11027 34L54.0559 54.0559L34 9.11027L62.8961 48.9519L68 0Z" fill="currentColor">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="deesign-button-wrap">
+                    <a button="" data-wf--button-primary--variant="base" href="/contact" class="button w-inline-block">                    <div class="button-link-text">
+                      <div class="button-link-text-wrap">
+                        <div button-text="top" class="button-text">
+                          Lets Contact
+                        </div>
+                        <div button-text="bottom" class="button-text">
+                          Lets Contact
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-icon-wrap">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                        <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                        </path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                        <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                        </path>
+                      </svg>
+                    </div>
+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="service-section">
+          <div class="service-sticky-wrap">
+            <div class="container">
+              <div class="content-wrap sticky">
+                <div class="sticky-title-wrap">
+                  <div class="section-heading">
+                    <div class="section-badge">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="section-badge-icon">
+                        <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                        </path>
+                      </svg>
+                      <div class="section-badge-text">
+                        What We Do
+                      </div>
+                    </div>
+                    <div class="section-description">
+                      <div class="heading-05">
+                        We’re a creative agency driven by the belief that bold ideas require smart strategy to transform brands.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-item-layout">
+                  <div class="service-items-title-wrapper">
+                    <div class="w-dyn-list">
+                      <div role="list" class="service-title-wrapper w-dyn-items">
+                        <div role="listitem" class="collection-item-2 w-dyn-item">
+                          <div class="service-title-wrap">
+                            <div class="service-item-details-mobile">
+                              <div class="service-image-wrap">
+                                <div class="service-item-visual mobile">
+                                  <div class="img-wrap">
+                                    <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c38de974a746c9983f9a0_Frame%2023.webp" loading="lazy" alt="UI/UX Design" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c38de974a746c9983f9a0_Frame%2023-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c38de974a746c9983f9a0_Frame%2023.webp 628w" class="img" />
+                                  </div>
+                                </div>
+                                <h3 class="service-title show-phone">
+                                  UI/UX Design
+                                </h3>
+                                <p class="text-medium">
+                                  Crafting intuitive and pixel-perfect designs that engage users and drive results.
+                                </p>
+                              </div>
+                              <div class="servcie-button-wrap">
+                                <a button="" data-wf--button-primary--variant="base" href="/services/ui-ux-design" class="button w-inline-block">                                <div class="button-link-text">
+                                  <div class="button-link-text-wrap">
+                                    <div button-text="top" class="button-text">
+                                      Explore project
+                                    </div>
+                                    <div button-text="bottom" class="button-text">
+                                      Explore project
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="button-icon-wrap">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                </div>
+</a>
+                              </div>
+                            </div>
+                            <h3 class="service-title one">
+                              UI/UX Design
+                            </h3>
+                          </div>
+                        </div>
+                        <div role="listitem" class="collection-item-2 w-dyn-item">
+                          <div class="service-title-wrap">
+                            <div class="service-item-details-mobile">
+                              <div class="service-image-wrap">
+                                <div class="service-item-visual mobile">
+                                  <div class="img-wrap">
+                                    <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c391502ae491efc6085ac_Frame%2023-1.webp" loading="lazy" alt="Web Development" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c391502ae491efc6085ac_Frame%2023-1-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c391502ae491efc6085ac_Frame%2023-1.webp 628w" class="img" />
+                                  </div>
+                                </div>
+                                <h3 class="service-title show-phone">
+                                  Web Development
+                                </h3>
+                                <p class="text-medium">
+                                  We build responsive, high-performing websites that deliver seamless user experiences.
+                                </p>
+                              </div>
+                              <div class="servcie-button-wrap">
+                                <a button="" data-wf--button-primary--variant="base" href="/services/web-development" class="button w-inline-block">                                <div class="button-link-text">
+                                  <div class="button-link-text-wrap">
+                                    <div button-text="top" class="button-text">
+                                      Explore project
+                                    </div>
+                                    <div button-text="bottom" class="button-text">
+                                      Explore project
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="button-icon-wrap">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                </div>
+</a>
+                              </div>
+                            </div>
+                            <h3 class="service-title one">
+                              Web Development
+                            </h3>
+                          </div>
+                        </div>
+                        <div role="listitem" class="collection-item-2 w-dyn-item">
+                          <div class="service-title-wrap">
+                            <div class="service-item-details-mobile">
+                              <div class="service-image-wrap">
+                                <div class="service-item-visual mobile">
+                                  <div class="img-wrap">
+                                    <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39ba3caf280d56baf641_Frame%2023-2.webp" loading="lazy" alt="Brand Identity" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39ba3caf280d56baf641_Frame%2023-2-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39ba3caf280d56baf641_Frame%2023-2.webp 628w" class="img" />
+                                  </div>
+                                </div>
+                                <h3 class="service-title show-phone">
+                                  Brand Identity
+                                </h3>
+                                <p class="text-medium">
+                                  We create unique brand identities that reflect your vision and values.
+                                </p>
+                              </div>
+                              <div class="servcie-button-wrap">
+                                <a button="" data-wf--button-primary--variant="base" href="/services/brand-identity" class="button w-inline-block">                                <div class="button-link-text">
+                                  <div class="button-link-text-wrap">
+                                    <div button-text="top" class="button-text">
+                                      Explore project
+                                    </div>
+                                    <div button-text="bottom" class="button-text">
+                                      Explore project
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="button-icon-wrap">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                </div>
+</a>
+                              </div>
+                            </div>
+                            <h3 class="service-title one">
+                              Brand Identity
+                            </h3>
+                          </div>
+                        </div>
+                        <div role="listitem" class="collection-item-2 w-dyn-item">
+                          <div class="service-title-wrap">
+                            <div class="service-item-details-mobile">
+                              <div class="service-image-wrap">
+                                <div class="service-item-visual mobile">
+                                  <div class="img-wrap">
+                                    <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39d26eb9fc54f7556b23_Frame%2023-3.webp" loading="lazy" alt="Digital Marketing" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39d26eb9fc54f7556b23_Frame%2023-3-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39d26eb9fc54f7556b23_Frame%2023-3.webp 628w" class="img" />
+                                  </div>
+                                </div>
+                                <h3 class="service-title show-phone">
+                                  Digital Marketing
+                                </h3>
+                                <p class="text-medium">
+                                  We design digital marketing strategies that drive engagement and growth.
+                                </p>
+                              </div>
+                              <div class="servcie-button-wrap">
+                                <a button="" data-wf--button-primary--variant="base" href="/services/digital-marketing" class="button w-inline-block">                                <div class="button-link-text">
+                                  <div class="button-link-text-wrap">
+                                    <div button-text="top" class="button-text">
+                                      Explore project
+                                    </div>
+                                    <div button-text="bottom" class="button-text">
+                                      Explore project
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="button-icon-wrap">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                    </path>
+                                  </svg>
+                                </div>
+</a>
+                              </div>
+                            </div>
+                            <h3 class="service-title one">
+                              Digital Marketing
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="w-node-_43bac75c-c1f9-72d9-4e16-19ead56a87f8-b2cf4730" class="service-image-wraopper">
+                    <div class="service-collection-list w-dyn-list">
+                      <div role="list" class="service-list w-dyn-items">
+                        <div role="listitem" class="service-collection-item w-dyn-item">
+                          <div class="service-item-details">
+                            <div class="service-image-wrap">
+                              <div class="service-item-visual">
+                                <div class="img-wrap">
+                                  <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c38de974a746c9983f9a0_Frame%2023.webp" loading="lazy" alt="UI/UX Design" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c38de974a746c9983f9a0_Frame%2023-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c38de974a746c9983f9a0_Frame%2023.webp 628w" class="img" />
+                                </div>
+                              </div>
+                              <p class="text-medium">
+                                Crafting intuitive and pixel-perfect designs that engage users and drive results.
+                              </p>
+                            </div>
+                            <div class="servcie-button-wrap">
+                              <a button="" data-wf--button-primary--variant="base" href="/services/ui-ux-design" class="button w-inline-block">                              <div class="button-link-text">
+                                <div class="button-link-text-wrap">
+                                  <div button-text="top" class="button-text">
+                                    Explore project
+                                  </div>
+                                  <div button-text="bottom" class="button-text">
+                                    Explore project
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button-icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                              </div>
+</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div role="listitem" class="service-collection-item w-dyn-item">
+                          <div class="service-item-details">
+                            <div class="service-image-wrap">
+                              <div class="service-item-visual">
+                                <div class="img-wrap">
+                                  <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c391502ae491efc6085ac_Frame%2023-1.webp" loading="lazy" alt="Web Development" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c391502ae491efc6085ac_Frame%2023-1-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c391502ae491efc6085ac_Frame%2023-1.webp 628w" class="img" />
+                                </div>
+                              </div>
+                              <p class="text-medium">
+                                We build responsive, high-performing websites that deliver seamless user experiences.
+                              </p>
+                            </div>
+                            <div class="servcie-button-wrap">
+                              <a button="" data-wf--button-primary--variant="base" href="/services/web-development" class="button w-inline-block">                              <div class="button-link-text">
+                                <div class="button-link-text-wrap">
+                                  <div button-text="top" class="button-text">
+                                    Explore project
+                                  </div>
+                                  <div button-text="bottom" class="button-text">
+                                    Explore project
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button-icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                              </div>
+</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div role="listitem" class="service-collection-item w-dyn-item">
+                          <div class="service-item-details">
+                            <div class="service-image-wrap">
+                              <div class="service-item-visual">
+                                <div class="img-wrap">
+                                  <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39ba3caf280d56baf641_Frame%2023-2.webp" loading="lazy" alt="Brand Identity" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39ba3caf280d56baf641_Frame%2023-2-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39ba3caf280d56baf641_Frame%2023-2.webp 628w" class="img" />
+                                </div>
+                              </div>
+                              <p class="text-medium">
+                                We create unique brand identities that reflect your vision and values.
+                              </p>
+                            </div>
+                            <div class="servcie-button-wrap">
+                              <a button="" data-wf--button-primary--variant="base" href="/services/brand-identity" class="button w-inline-block">                              <div class="button-link-text">
+                                <div class="button-link-text-wrap">
+                                  <div button-text="top" class="button-text">
+                                    Explore project
+                                  </div>
+                                  <div button-text="bottom" class="button-text">
+                                    Explore project
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button-icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                              </div>
+</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div role="listitem" class="service-collection-item w-dyn-item">
+                          <div class="service-item-details">
+                            <div class="service-image-wrap">
+                              <div class="service-item-visual">
+                                <div class="img-wrap">
+                                  <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39d26eb9fc54f7556b23_Frame%2023-3.webp" loading="lazy" alt="Digital Marketing" sizes="(max-width: 767px) 100vw, 628px" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39d26eb9fc54f7556b23_Frame%2023-3-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c39d26eb9fc54f7556b23_Frame%2023-3.webp 628w" class="img" />
+                                </div>
+                              </div>
+                              <p class="text-medium">
+                                We design digital marketing strategies that drive engagement and growth.
+                              </p>
+                            </div>
+                            <div class="servcie-button-wrap">
+                              <a button="" data-wf--button-primary--variant="base" href="/services/digital-marketing" class="button w-inline-block">                              <div class="button-link-text">
+                                <div class="button-link-text-wrap">
+                                  <div button-text="top" class="button-text">
+                                    Explore project
+                                  </div>
+                                  <div button-text="bottom" class="button-text">
+                                    Explore project
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button-icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                                  <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                                  </path>
+                                </svg>
+                              </div>
+</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="works">
+          <div class="long-section-service-item">
+            <div class="pin-section-work-item">
+              <div class="work-cms-list one w-dyn-list">
+                <div role="list" class="collection-list w-dyn-items">
+                  <div role="listitem" class="collection-item w-dyn-item">
+                    <div class="wrap-work-item">
+                      <div class="work-main-image">
+                        <div class="work-image-dark-overlay">
+                        </div>
+                        <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1.webp" loading="lazy" alt="FinEdge" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1.webp 1438w" class="work-item-image" />
+                      </div>
+                      <div class="work-container">
+                        <a href="/works/finedge" class="container-hero-work w-inline-block">                        <div class="works-tags-wrapper">
+                          <div class="work-category">
+                            <div class="text-color-white">
+                              UI/UX Design
+                            </div>
+                          </div>
+                          <div class="work-category">
+                            <div class="text-color-white">
+                              2025
+                            </div>
+                          </div>
+                        </div>
+                        <div class="small-work-image-center-align">
+                          <div class="small-work-image-wrap">
+                            <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37fc1a569171a99d30dc_Frame%2026-1.webp 1438w" class="small-work-image one" />
+                          </div>
+                        </div>
+                        <div class="work-heading-wrap">
+                          <div class="small-work-title-wrap">
+                            <h3 class="text-color-white one">
+                              FinEdge
+                            </h3>
+                          </div>
+                          <div class="work-description">
+                            <p class="work-description-text one">
+                              A modern fintech product for secure and easy money management.
+                            </p>
+                          </div>
+                        </div>
+</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-cms-list three w-dyn-list">
+                <div role="list" class="collection-list w-dyn-items">
+                  <div role="listitem" class="collection-item w-dyn-item">
+                    <div class="wrap-work-item">
+                      <div class="work-main-image">
+                        <div class="work-image-dark-overlay">
+                        </div>
+                        <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2.webp" loading="lazy" alt="Nova" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2.webp 1438w" class="work-item-image" />
+                      </div>
+                      <div class="work-container">
+                        <a href="/works/nova" class="container-hero-work w-inline-block">                        <div class="works-tags-wrapper">
+                          <div class="work-category">
+                            <div class="text-color-white">
+                              Branding
+                            </div>
+                          </div>
+                          <div class="work-category">
+                            <div class="text-color-white">
+                              2024
+                            </div>
+                          </div>
+                        </div>
+                        <div class="small-work-image-center-align">
+                          <div class="small-work-image-wrap">
+                            <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/698c37dad0dce3a74baa792a_Frame%2026-2.webp 1438w" class="small-work-image two" />
+                          </div>
+                        </div>
+                        <div class="work-heading-wrap">
+                          <div class="small-work-title-wrap">
+                            <h3 class="text-color-white two">
+                              Nova
+                            </h3>
+                          </div>
+                          <div class="work-description">
+                            <p class="work-description-text two">
+                              An AI based platform that simplifies work using smart automation.
+                            </p>
+                          </div>
+                        </div>
+</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-cms-list two w-dyn-list">
+                <div role="list" class="collection-list w-dyn-items">
+                  <div role="listitem" class="collection-item w-dyn-item">
+                    <div class="wrap-work-item">
+                      <div class="work-main-image">
+                        <div class="work-image-dark-overlay">
+                        </div>
+                        <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001.webp" loading="lazy" alt="Crafto" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-1600.webp 1600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-2000.webp 2000w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-2600.webp 2600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-3200.webp 3200w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001.webp 5376w" class="work-item-image" />
+                      </div>
+                      <div class="work-container">
+                        <a href="/works/crafto" class="container-hero-work w-inline-block">                        <div class="works-tags-wrapper">
+                          <div class="work-category">
+                            <div class="text-color-white">
+                              UI/UX Design
+                            </div>
+                          </div>
+                          <div class="work-category">
+                            <div class="text-color-white">
+                              2023
+                            </div>
+                          </div>
+                        </div>
+                        <div class="small-work-image-center-align">
+                          <div class="small-work-image-wrap">
+                            <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-1600.webp 1600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-2000.webp 2000w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-2600.webp 2600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001-p-3200.webp 3200w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/6928b402ed0ac77d168739dc_works%2001.webp 5376w" class="small-work-image three" />
+                          </div>
+                        </div>
+                        <div class="work-heading-wrap">
+                          <div class="small-work-title-wrap">
+                            <h3 class="text-color-white three">
+                              Crafto
+                            </h3>
+                          </div>
+                          <div class="work-description">
+                            <p class="work-description-text three">
+                              A creative digital project focused on branding and design.
+                            </p>
+                          </div>
+                        </div>
+</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="process-section-wrap">
+          <div class="container">
+            <div class="section-heading">
+              <div class="section-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="section-badge-icon">
+                  <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                  </path>
+                </svg>
+                <div class="section-badge-text">
+                  Our Design Process
+                </div>
+              </div>
+              <div class="section-description">
+                <div class="heading-05">
+                  We follow a structured yet flexible design process that ensures every project is creative, strategic, and user-focused.
+                </div>
+              </div>
+            </div>
+          </div>
+          <section data-w-id="a06df44f-d7af-f5bb-3e24-2ac178213ed2" class="creative-section">
+            <div class="design-sticky-wrap">
+              <div class="container">
+                <div class="content-wrap">
+                  <div class="design-wrapper">
+                    <div data-w-id="a06df44f-d7af-f5bb-3e24-2ac178213ed6" class="creative-design-top-wrap">
+                      <div class="creative-design-content-wrap">
+                        <h2 class="design-title">
+                          Design
+                          <br />
+                          process
+                        </h2>
+                      </div>
+                      <div class="deesign-button-wrap">
+                        <a button="" data-wf--button-primary--variant="base" href="#" class="button w-inline-block">                        <div class="button-link-text">
+                          <div class="button-link-text-wrap">
+                            <div button-text="top" class="button-text">
+                              Explore project
+                            </div>
+                            <div button-text="bottom" class="button-text">
+                              Explore project
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-icon-wrap">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                            <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                            <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                            </path>
+                          </svg>
+                        </div>
+</a>
+                      </div>
+                    </div>
+                    <div class="box-one one">
+                    </div>
+                    <div class="box-one two">
+                    </div>
+                    <div class="box-two three">
+                      <div class="inner-box-div">
+                        <div class="design-process-image one">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="design-process-icon">
+                            <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <div class="design-process-tiitle">
+                            Discovery &amp; Research
+                          </div>
+                        </div>
+                        <div class="design-process-image two">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="design-process-icon">
+                            <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <div class="design-process-tiitle">
+                            Planning
+                          </div>
+                        </div>
+                        <div class="design-process-image three">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="design-process-icon">
+                            <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <div class="design-process-tiitle">
+                            Wireframing &amp; Prototyping
+                          </div>
+                        </div>
+                        <div class="design-process-image four">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="design-process-icon">
+                            <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <div class="design-process-tiitle">
+                            Visual Design
+                          </div>
+                        </div>
+                        <div class="design-process-image five">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="design-process-icon">
+                            <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <div class="design-process-tiitle">
+                            Development
+                          </div>
+                        </div>
+                        <div class="design-process-image six">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="design-process-icon">
+                            <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                            </path>
+                          </svg>
+                          <div class="design-process-tiitle">
+                            Testing
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section testimonial="" class="section overflow">
+          <div class="container">
+            <div class="content-wrap">
+              <div class="section-heading">
+                <div class="section-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="section-badge-icon">
+                    <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <div class="section-badge-text">
+                    What Our Clients Say
+                  </div>
+                </div>
+                <div class="section-description">
+                  <div class="heading-05">
+                    We follow a structured yet flexible design process that ensures every project is creative, strategic, and user-focused.
+                  </div>
+                </div>
+              </div>
+              <div data-animation="slide-up" data-w-id="410bb25e-08e0-af40-0a19-dbaabac3f8fb" class="testimonial-wrap">
+                <div class="testimonial-card one">
+                  <div class="img-wrap">
+                    <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69174bc5d22f02cb8c4cc6ea_Testimonial%20Image.webp" loading="lazy" sizes="(max-width: 1656px) 100vw, 1656px" srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69174bc5d22f02cb8c4cc6ea_Testimonial%20Image-p-500.webp 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69174bc5d22f02cb8c4cc6ea_Testimonial%20Image-p-800.webp 800w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69174bc5d22f02cb8c4cc6ea_Testimonial%20Image-p-1080.webp 1080w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69174bc5d22f02cb8c4cc6ea_Testimonial%20Image-p-1600.webp 1600w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69174bc5d22f02cb8c4cc6ea_Testimonial%20Image.webp 1656w" alt="Testimonial Image" class="img" />
+                  </div>
+                  <div class="testimonial-card-button">
+                    <div class="heading-04 text-color-white">
+                      David Kim
+                    </div>
+                    <a button="" data-wf--button-primary--variant="white" href="/work" class="button w-variant-286bdd67-4675-06b9-e8ef-63b13e8821db w-inline-block">                    <div class="button-link-text">
+                      <div class="button-link-text-wrap">
+                        <div button-text="top" class="button-text">
+                          View Details
+                        </div>
+                        <div button-text="bottom" class="button-text">
+                          View Details
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-icon-wrap w-variant-286bdd67-4675-06b9-e8ef-63b13e8821db">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                        <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                        </path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                        <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                        </path>
+                      </svg>
+                    </div>
+</a>
+                  </div>
+                </div>
+                <div>
+                  <div class="testimonial-marquee">
+                    <div class="testimonial-marquee-item">
+                      <div class="marquee-group">
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              The dashboard UX they delivered helped us cut onboarding time in half. Their strategic thinking and pixel-perfect execution exceeded expectations.
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6916b39ff53e0b6a007df281_author%20image%201.png" loading="lazy" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                David Kim
+                              </div>
+                              <div class="text-color-gray-600">
+                                Head of Product
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              The refined dashboard experience sped up our setup process significantly. Their strong strategy and perfect execution exceeded all expectations o.
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69683f79392e7ee79fc85bef_author%202.png" loading="lazy" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                Lena Rodriguez
+                              </div>
+                              <div class="text-color-gray-600">
+                                3D Artist
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              Their streamlined dashboard solution transformed our daily operations. The thoughtful strategy and accurate execution performed beyond our hopes.!
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2dd3a4922390efc4bc_2147646522.jpg" loading="lazy" sizes="(max-width: 667px) 100vw, 667px" srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2dd3a4922390efc4bc_2147646522-p-500.jpg 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2dd3a4922390efc4bc_2147646522.jpg 667w" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                Emily Rivera
+                                <br />
+                              </div>
+                              <div class="text-color-gray-600">
+                                UX Lead
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              The interface overhaul they delivered reduced our setup time a lot. Their clear strategy and precise attention to detail truly impressed our team.
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2d084590bc8baf3285_images.jpeg" loading="lazy" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                Lena Rodriguez
+                              </div>
+                              <div class="text-color-gray-600">
+                                Head of Operations
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-marquee-item">
+                      <div class="marquee-group">
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              The dashboard UX they delivered helped us cut onboarding time in half. Their strategic thinking and pixel-perfect execution exceeded expectations.
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/6916b39ff53e0b6a007df281_author%20image%201.png" loading="lazy" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                David Kim
+                              </div>
+                              <div class="text-color-gray-600">
+                                Head of Product
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              The refined dashboard experience sped up our setup process significantly. Their strong strategy and perfect execution exceeded all expectations o.
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69683f79392e7ee79fc85bef_author%202.png" loading="lazy" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                Lena Rodriguez
+                              </div>
+                              <div class="text-color-gray-600">
+                                3D Artist
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              Their streamlined dashboard solution transformed our daily operations. The thoughtful strategy and accurate execution performed beyond our hopes.!
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2dd3a4922390efc4bc_2147646522.jpg" loading="lazy" sizes="(max-width: 667px) 100vw, 667px" srcset="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2dd3a4922390efc4bc_2147646522-p-500.jpg 500w, https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2dd3a4922390efc4bc_2147646522.jpg 667w" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                Emily Rivera
+                                <br />
+                              </div>
+                              <div class="text-color-gray-600">
+                                UX Lead
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 32 32" fill="none" class="testimonial-icon">
+                            <mask id="mask0_0_7733" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                              <path d="M32 0H0V32H32V0Z" fill="white">
+                              </path>
+                            </mask>
+                            <g mask="url(#mask0_0_7733)">
+                              <path d="M0 15.9994V29.7138H13.7143V15.9994H4.57146C4.57146 10.9582 8.67304 6.85661 13.7143 6.85661V2.28516C6.15178 2.28516 0 8.43695 0 15.9994Z" fill="currentColor">
+                              </path>
+                              <path d="M31.9995 6.8576V2.28613C24.4369 2.28613 18.2852 8.43796 18.2852 16.0004V29.7148H31.9995V16.0004H22.8566C22.8566 10.9592 26.9582 6.8576 31.9995 6.8576Z" fill="currentColor">
+                              </path>
+                            </g>
+                          </svg>
+                          <div class="testimonial-text">
+                            <p class="text-large">
+                              The interface overhaul they delivered reduced our setup time a lot. Their clear strategy and precise attention to detail truly impressed our team.
+                            </p>
+                          </div>
+                          <div class="w-layout-vflex clinet-wrap">
+                            <div class="client-image">
+                              <div class="img-wrap">
+                                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/69175b2d084590bc8baf3285_images.jpeg" loading="lazy" alt="Client image" class="img" />
+                              </div>
+                            </div>
+                            <div class="client-info">
+                              <div class="heading-05">
+                                Lena Rodriguez
+                              </div>
+                              <div class="text-color-gray-600">
+                                Head of Operations
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="content-wrap">
+              <div class="section-heading">
+                <div class="section-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 22 22" fill="none" class="section-badge-icon">
+                    <path d="M11 0L11.8256 7.9187L16.5 1.47372L13.2557 8.74433L20.5263 5.5L14.0813 10.1744L22 11L14.0813 11.8256L20.5263 16.5L13.2557 13.2557L16.5 20.5263L11.8256 14.0813L11 22L10.1744 14.0813L5.5 20.5263L8.74433 13.2557L1.47372 16.5L7.9187 11.8256L0 11L7.9187 10.1744L1.47372 5.5L8.74433 8.74433L5.5 1.47372L10.1744 7.9187L11 0Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <div class="section-badge-text">
+                    Insights &amp; Inspiration
+                  </div>
+                </div>
+                <div class="section-description">
+                  <div class="heading-05">
+                    Stay updated with the latest design trends, digital strategies, and creative ideas from our team.
+                  </div>
+                </div>
+              </div>
+              <div class="w-dyn-list">
+                <div blog-card="animate" role="list" class="blog-wrapper w-dyn-items">
+                  <div role="listitem" class="blog-item w-dyn-item">
+                    <a aria-label="link block" href="/post/the-future-of-ui-ux-design-in-2025" class="blog-card w-inline-block">                    <div class="blog-card-body">
+                      <div class="text-small text-color-gray-v2">
+                        UI UX
+                      </div>
+                      <div class="heading-05">
+                        The Future of UI/UX Design  in 2025
+                      </div>
+                      <div class="text-small text-color-gray-600">
+                        Discover the latest trends shaping the future of design. From AI-powered tools to human.
+                      </div>
+                    </div>
+                    <div class="blog-card-image-wrap">
+                      <div class="img-wrap">
+                        <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc449c173257475ed6d3f_Blog%20image%2005.webp" loading="lazy" alt="The Future of UI/UX Design  in 2025" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc449c173257475ed6d3f_Blog%20image%2005-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc449c173257475ed6d3f_Blog%20image%2005-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc449c173257475ed6d3f_Blog%20image%2005-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc449c173257475ed6d3f_Blog%20image%2005-p-1600.webp 1600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc449c173257475ed6d3f_Blog%20image%2005-p-2000.webp 2000w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc449c173257475ed6d3f_Blog%20image%2005.webp 2688w" class="img" />
+                        <div class="blog-card-image-overlay">
+                        </div>
+                      </div>
+                    </div>
+</a>
+                  </div>
+                  <div role="listitem" class="blog-item w-dyn-item">
+                    <a aria-label="link block" href="/post/why-consistent-branding-builds-trust" class="blog-card w-inline-block">                    <div class="blog-card-body">
+                      <div class="text-small text-color-gray-v2">
+                        Deisgn
+                      </div>
+                      <div class="heading-05">
+                        Why Consistent Branding Builds Trust
+                      </div>
+                      <div class="text-small text-color-gray-600">
+                        Consistency across every touchpoint builds recognition and loyalty. Learn how to align visuals.
+                      </div>
+                    </div>
+                    <div class="blog-card-image-wrap">
+                      <div class="img-wrap">
+                        <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003.webp" loading="lazy" alt="Why Consistent Branding Builds Trust" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003-p-1600.webp 1600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003-p-2000.webp 2000w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003-p-2600.webp 2600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dc415fac8624493dc12f5_Blog%20image%2003.webp 2688w" class="img" />
+                        <div class="blog-card-image-overlay">
+                        </div>
+                      </div>
+                    </div>
+</a>
+                  </div>
+                  <div role="listitem" class="blog-item w-dyn-item">
+                    <a aria-label="link block" href="/post/why-your-business-needs-a-strong-brand-identity-2" class="blog-card w-inline-block">                    <div class="blog-card-body">
+                      <div class="text-small text-color-gray-v2">
+                        Branding
+                      </div>
+                      <div class="heading-05">
+                        Why Your Business Needs a Strong Brand Identity
+                      </div>
+                      <div class="text-small text-color-gray-600">
+                        A powerful brand identity does more than look good. Learn how it builds trust, connects with
+                      </div>
+                    </div>
+                    <div class="blog-card-image-wrap">
+                      <div class="img-wrap">
+                        <img src="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dd18f3def5635f875dba3_Blog%20image%2004.webp" loading="lazy" alt="Why Your Business Needs a Strong Brand Identity" sizes="100vw" srcset="https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dd18f3def5635f875dba3_Blog%20image%2004-p-500.webp 500w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dd18f3def5635f875dba3_Blog%20image%2004-p-800.webp 800w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dd18f3def5635f875dba3_Blog%20image%2004-p-1080.webp 1080w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dd18f3def5635f875dba3_Blog%20image%2004-p-1600.webp 1600w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dd18f3def5635f875dba3_Blog%20image%2004-p-2000.webp 2000w, https://cdn.prod.website-files.com/6928acbf9f5e41d88c91d9b9/692dd18f3def5635f875dba3_Blog%20image%2004.webp 2688w" class="img" />
+                        <div class="blog-card-image-overlay">
+                        </div>
+                      </div>
+                    </div>
+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cta-section">
+          <div class="container">
+            <div class="cta-content-wrap">
+              <div class="cta-text-wrap">
+                <h3 class="heading-03 white">
+                  Let’s Build Something Great Together
+                </h3>
+                <div class="cta-description">
+                  <p class="text-default white">
+                    Have an idea in mind? We are here to turn it into reality.
+                  </p>
+                </div>
+              </div>
+              <div class="cta-button-wrap">
+                <a button="" data-wf--button-primary--variant="white" href="/contact" class="button w-variant-286bdd67-4675-06b9-e8ef-63b13e8821db w-inline-block">                <div class="button-link-text">
+                  <div class="button-link-text-wrap">
+                    <div button-text="top" class="button-text">
+                      Start Your Project
+                    </div>
+                    <div button-text="bottom" class="button-text">
+                      Start Your Project
+                    </div>
+                  </div>
+                </div>
+                <div class="button-icon-wrap w-variant-286bdd67-4675-06b9-e8ef-63b13e8821db">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="main" class="button-icon">
+                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" button-icon="hover" class="button-icon hover">
+                    <path d="M10.5024 7.40005L7.28402 4.18165L8.13242 3.33325L12.7992 8.00005L8.13242 12.6669L7.28402 11.8185L10.5024 8.60005H3.19922V7.40005H10.5024Z" fill="currentColor">
+                    </path>
+                  </svg>
+                </div>
+</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="footer">
+        <div class="footer-main-wrap">
+          <div class="container">
+            <div data-stagger="animate" class="footer-wrapper">
+              <div id="w-node-_5068d755-33b6-0e76-5b48-2e3db4ae8457-b4ae8453" class="footer-wrap">
+                <a href="/" aria-current="page" class="nav-logo w-inline-block w--current">                <img src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/698c34b3074fe4187cc404fa_Oxygen%20Studio.svg" loading="lazy" alt="" />
+</a>
+                <p class="text-color-lighter-gray">
+                  We are a creative agency that blends strategy, design, and technology to craft digital experiences that inspire and drive growth.
+                </p>
+              </div>
+              <div class="footer-wrap">
+                <div class="heading-05">
+                  Main
+                </div>
+                <div class="footer-link-wrap">
+                  <a href="/" aria-current="page" class="footer-text-link w--current">                  Home
+</a>
+                  <a href="/work" class="footer-text-link">                  Work
+</a>
+                  <a href="/about" class="footer-text-link">                  About
+</a>
+                  <a href="/career" class="footer-text-link">                  Career
+</a>
+                  <a href="/contact" class="footer-text-link">                  Contact
+</a>
+                  <a href="/blog" class="footer-text-link">                  Blog
+</a>
+                </div>
+              </div>
+              <div class="footer-wrap">
+                <div class="heading-05">
+                  Utility
+                </div>
+                <div class="footer-link-wrap">
+                  <a href="/404" class="footer-text-link">                  404
+</a>
+                  <a href="/template/license" class="footer-text-link">                  License
+</a>
+                  <a href="/template/changle-log" class="footer-text-link">                  Changelog
+</a>
+                  <a href="/template/instructions" class="footer-text-link">                  Instruction
+</a>
+                  <a href="/401" class="footer-text-link">                  Password
+</a>
+                </div>
+              </div>
+              <div id="w-node-_5068d755-33b6-0e76-5b48-2e3db4ae8477-b4ae8453" class="footer-wrap">
+                <div class="heading-05">
+                  Address
+                </div>
+                <div class="footer-link-wrap">
+                  <a href="#" target="_blank" class="footer-info-link w-inline-block">                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="footer-icon">
+                    <path d="M11.9999 20.0099L16.4549 15.5549C17.3359 14.6738 17.9359 13.5513 18.1789 12.3292C18.4219 11.1072 18.2971 9.84047 17.8203 8.68933C17.3434 7.53819 16.5359 6.55431 15.4999 5.86208C14.4639 5.16986 13.2459 4.80038 11.9999 4.80038C10.7539 4.80038 9.5359 5.16986 8.49988 5.86208C7.46386 6.55431 6.65638 7.53819 6.17953 8.68933C5.70268 9.84047 5.57788 11.1072 5.82091 12.3292C6.06395 13.5513 6.6639 14.6738 7.54491 15.5549L11.9999 20.0099ZM11.9999 22.5551L6.27231 16.8275C5.13951 15.6947 4.36807 14.2514 4.05554 12.6802C3.74301 11.109 3.90342 9.48032 4.51649 8.00024C5.12956 6.52017 6.16776 5.25512 7.4998 4.36509C8.83183 3.47505 10.3979 3 11.9999 3C13.6019 3 15.168 3.47505 16.5 4.36509C17.832 5.25512 18.8702 6.52017 19.4833 8.00024C20.0964 9.48032 20.2568 11.109 19.9443 12.6802C19.6317 14.2514 18.8603 15.6947 17.7275 16.8275L11.9999 22.5551ZM11.9999 12.8999C12.4773 12.8999 12.9351 12.7103 13.2727 12.3727C13.6103 12.0352 13.7999 11.5773 13.7999 11.0999C13.7999 10.6225 13.6103 10.1647 13.2727 9.82714C12.9351 9.48957 12.4773 9.29993 11.9999 9.29993C11.5225 9.29993 11.0647 9.48957 10.7271 9.82714C10.3895 10.1647 10.1999 10.6225 10.1999 11.0999C10.1999 11.5773 10.3895 12.0352 10.7271 12.3727C11.0647 12.7103 11.5225 12.8999 11.9999 12.8999ZM11.9999 14.6999C11.0451 14.6999 10.1295 14.3206 9.45432 13.6455C8.77919 12.9704 8.39991 12.0547 8.39991 11.0999C8.39991 10.1452 8.77919 9.22948 9.45432 8.55434C10.1295 7.87921 11.0451 7.49993 11.9999 7.49993C12.9547 7.49993 13.8704 7.87921 14.5455 8.55434C15.2206 9.22948 15.5999 10.1452 15.5999 11.0999C15.5999 12.0547 15.2206 12.9704 14.5455 13.6455C13.8704 14.3206 12.9547 14.6999 11.9999 14.6999Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <div>
+                    New York, NY / Remote
+                  </div>
+</a>
+                  <a href="#" class="footer-info-link w-inline-block">                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="footer-icon">
+                    <path d="M9.6293 10.8137C10.4738 12.2973 11.7025 13.526 13.1861 14.3705L13.9817 13.2563C14.1096 13.0771 14.2988 12.9511 14.5134 12.902C14.728 12.8529 14.9532 12.8842 15.1463 12.9899C16.4192 13.6855 17.8249 14.1039 19.271 14.2175C19.4967 14.2354 19.7074 14.3377 19.861 14.504C20.0146 14.6703 20.0999 14.8884 20.0999 15.1148V19.1306C20.1 19.3534 20.0173 19.5684 19.868 19.7338C19.7187 19.8992 19.5134 20.0034 19.2917 20.0261C18.8147 20.0756 18.3341 20.0999 17.8499 20.0999C10.1459 20.0999 3.8999 13.8539 3.8999 6.1499C3.8999 5.6657 3.9242 5.1851 3.9737 4.7081C3.99643 4.48643 4.10059 4.28107 4.26601 4.13177C4.43144 3.98247 4.64637 3.89985 4.8692 3.8999H8.885C9.11141 3.89987 9.32951 3.98518 9.49582 4.13881C9.66212 4.29244 9.76442 4.5031 9.7823 4.7288C9.8959 6.17492 10.3143 7.58061 11.0099 8.8535C11.1156 9.04661 11.1469 9.27177 11.0978 9.48638C11.0487 9.70099 10.9227 9.89016 10.7435 10.0181L9.6293 10.8137ZM7.3595 10.2224L9.0695 9.0011C8.58421 7.95359 8.25172 6.84186 8.0822 5.6999H5.7089C5.7035 5.8493 5.7008 5.9996 5.7008 6.1499C5.6999 12.8603 11.1395 18.2999 17.8499 18.2999C18.0002 18.2999 18.1505 18.2972 18.2999 18.2909V15.9176C17.1579 15.7481 16.0462 15.4156 14.9987 14.9303L13.7774 16.6403C13.2857 16.4492 12.8081 16.2237 12.3482 15.9653L12.296 15.9356C10.5307 14.9309 9.06885 13.4691 8.0642 11.7038L8.0345 11.6516C7.77612 11.1917 7.55056 10.7141 7.3595 10.2224Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <div>
+                    +1 (234) 567-8910
+                  </div>
+</a>
+                  <a href="mailto:hello@oxygenstudio.com?subject=Contact%20With%20Us" class="footer-info-link w-inline-block">                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="footer-icon">
+                    <path d="M3.9 4.5H20.1C20.3387 4.5 20.5676 4.59482 20.7364 4.7636C20.9052 4.93239 21 5.16131 21 5.4V18.6C21 18.8387 20.9052 19.0676 20.7364 19.2364C20.5676 19.4052 20.3387 19.5 20.1 19.5H3.9C3.66131 19.5 3.43239 19.4052 3.2636 19.2364C3.09482 19.0676 3 18.8387 3 18.6V5.4C3 5.16131 3.09482 4.93239 3.2636 4.7636C3.43239 4.59482 3.66131 4.5 3.9 4.5ZM19.2 8.3142L12.0648 14.7042L4.8 8.2944V17.7H19.2V8.3142ZM5.2599 6.3L12.0549 12.2958L18.7518 6.3H5.2599Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <div>
+                    hello@oxygenstudio.com
+                  </div>
+</a>
+                </div>
+              </div>
+              <div id="w-node-_5068d755-33b6-0e76-5b48-2e3db4ae848a-b4ae8453" class="footer-wrap">
+                <div class="newsletter-form-block w-form">
+                  <form id="newsletter-form" name="email-form" data-name="Email Form" method="get" class="newsletter-form" data-wf-page-id="68f28cd63ee28173b2cf4730" data-wf-element-id="5068d755-33b6-0e76-5b48-2e3db4ae848c">
+                    <label for="email" class="heading-05">
+                      Enter your email to reach us
+                    </label>
+                    <div class="form-field-wrap">
+                      <input class="form-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter here" type="email" id="newsletter-email" required="" />
+                      <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit" />
+                    </div>
+                  </form>
+                  <div class="success-message w-form-done">
+                    <div class="text-default">
+                      Thank you! Your submission has been received!
+                    </div>
+                  </div>
+                  <div class="error-message w-form-fail">
+                    <div class="text-default">
+                      Oops! Something went wrong while submitting the form.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-marquee">
+            <div class="marquee-item-wrap">
+              <div class="main-loop-arrow">
+                <div class="marquee-image-wrap">
+                  <div class="marquee-text">
+                    Oxygen Studio
+                  </div>
+                </div>
+                <div class="foooter-star-icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 240 240" fill="none" class="footer-star-icon">
+                    <path d="M120 0L129.007 86.3858L180 16.077L144.607 95.3927L223.923 60L153.614 110.993L240 120L153.614 129.007L223.923 180L144.607 144.607L180 223.923L129.007 153.614L120 240L110.993 153.614L60 223.923L95.3927 144.607L16.077 180L86.3858 129.007L0 120L86.3858 110.993L16.077 60L95.3927 95.3927L60 16.077L110.993 86.3858L120 0Z" fill="currentColor">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="marquee-item-wrap">
+              <div class="main-loop-arrow">
+                <div class="marquee-image-wrap">
+                  <div class="marquee-text">
+                    Oxygen Studio
+                  </div>
+                </div>
+                <div class="foooter-star-icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 240 240" fill="none" class="footer-star-icon">
+                    <path d="M120 0L129.007 86.3858L180 16.077L144.607 95.3927L223.923 60L153.614 110.993L240 120L153.614 129.007L223.923 180L144.607 144.607L180 223.923L129.007 153.614L120 240L110.993 153.614L60 223.923L95.3927 144.607L16.077 180L86.3858 129.007L0 120L86.3858 110.993L16.077 60L95.3927 95.3927L60 16.077L110.993 86.3858L120 0Z" fill="currentColor">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="marquee-item-wrap">
+              <div class="main-loop-arrow">
+                <div class="marquee-image-wrap">
+                  <div class="marquee-text">
+                    Oxygen Studio
+                  </div>
+                </div>
+                <div class="foooter-star-icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 240 240" fill="none" class="footer-star-icon">
+                    <path d="M120 0L129.007 86.3858L180 16.077L144.607 95.3927L223.923 60L153.614 110.993L240 120L153.614 129.007L223.923 180L144.607 144.607L180 223.923L129.007 153.614L120 240L110.993 153.614L60 223.923L95.3927 144.607L16.077 180L86.3858 129.007L0 120L86.3858 110.993L16.077 60L95.3927 95.3927L60 16.077L110.993 86.3858L120 0Z" fill="currentColor">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div data-w-id="5068d755-33b6-0e76-5b48-2e3db4ae84b5" class="footer-copywrite">
+              <p class="text-color-lighter-gray">
+                Built in
+                <a href="#" target="_blank" class="text-link">                Webflow
+</a>
+              </p>
+              <p class="text-color-lighter-gray">
+                © 2025 Oxygen Studio. All rights reserved.
+              </p>
+              <div class="footer-social-link-wrapper">
+                <a aria-label="Link Block" data-w-id="5068d755-33b6-0e76-5b48-2e3db4ae84bb" href="https://www.discord.com" target="_blank" class="socail-single-link w-inline-block">                <div class="socail-icon-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon">
+                    <path d="M16.1708 4.4619C15.0028 3.92715 13.7697 3.54779 12.5031 3.3335C12.3298 3.64334 12.173 3.96212 12.0333 4.28851C10.6841 4.08521 9.31207 4.08521 7.96289 4.28851C7.82315 3.96215 7.66632 3.64337 7.49307 3.3335C6.22565 3.5496 4.99177 3.92986 3.82258 4.46469C1.50144 7.89883 0.872209 11.2477 1.18682 14.549C2.54614 15.5533 4.06761 16.3171 5.68509 16.8072C6.0493 16.3173 6.37158 15.7977 6.64851 15.2537C6.12252 15.0573 5.61485 14.8149 5.13137 14.5294C5.25862 14.4371 5.38306 14.342 5.50332 14.2498C6.91012 14.9113 8.44558 15.2544 10.0002 15.2544C11.5548 15.2544 13.0903 14.9113 14.4971 14.2498C14.6187 14.349 14.7432 14.4441 14.869 14.5294C14.3846 14.8154 13.876 15.0582 13.3491 15.2551C13.6257 15.7988 13.948 16.318 14.3125 16.8072C15.9313 16.3191 17.454 15.5556 18.8136 14.5504C19.1827 10.7219 18.1829 7.40385 16.1708 4.4619ZM7.04702 12.5187C6.1703 12.5187 5.44599 11.7231 5.44599 10.7443C5.44599 9.76552 6.14513 8.96291 7.04422 8.96291C7.94332 8.96291 8.66203 9.76552 8.64665 10.7443C8.63127 11.7231 7.94052 12.5187 7.04702 12.5187ZM12.9534 12.5187C12.0752 12.5187 11.3537 11.7231 11.3537 10.7443C11.3537 9.76552 12.0529 8.96291 12.9534 8.96291C13.8538 8.96291 14.567 9.76552 14.5516 10.7443C14.5362 11.7231 13.8469 12.5187 12.9534 12.5187Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon hover">
+                    <path d="M16.1708 4.4619C15.0028 3.92715 13.7697 3.54779 12.5031 3.3335C12.3298 3.64334 12.173 3.96212 12.0333 4.28851C10.6841 4.08521 9.31207 4.08521 7.96289 4.28851C7.82315 3.96215 7.66632 3.64337 7.49307 3.3335C6.22565 3.5496 4.99177 3.92986 3.82258 4.46469C1.50144 7.89883 0.872209 11.2477 1.18682 14.549C2.54614 15.5533 4.06761 16.3171 5.68509 16.8072C6.0493 16.3173 6.37158 15.7977 6.64851 15.2537C6.12252 15.0573 5.61485 14.8149 5.13137 14.5294C5.25862 14.4371 5.38306 14.342 5.50332 14.2498C6.91012 14.9113 8.44558 15.2544 10.0002 15.2544C11.5548 15.2544 13.0903 14.9113 14.4971 14.2498C14.6187 14.349 14.7432 14.4441 14.869 14.5294C14.3846 14.8154 13.876 15.0582 13.3491 15.2551C13.6257 15.7988 13.948 16.318 14.3125 16.8072C15.9313 16.3191 17.454 15.5556 18.8136 14.5504C19.1827 10.7219 18.1829 7.40385 16.1708 4.4619ZM7.04702 12.5187C6.1703 12.5187 5.44599 11.7231 5.44599 10.7443C5.44599 9.76552 6.14513 8.96291 7.04422 8.96291C7.94332 8.96291 8.66203 9.76552 8.64665 10.7443C8.63127 11.7231 7.94052 12.5187 7.04702 12.5187ZM12.9534 12.5187C12.0752 12.5187 11.3537 11.7231 11.3537 10.7443C11.3537 9.76552 12.0529 8.96291 12.9534 8.96291C13.8538 8.96291 14.567 9.76552 14.5516 10.7443C14.5362 11.7231 13.8469 12.5187 12.9534 12.5187Z" fill="currentColor">
+                    </path>
+                  </svg>
+                </div>
+                <div class="socail-icon-bg">
+                </div>
+</a>
+                <a aria-label="Link Block" data-w-id="5068d755-33b6-0e76-5b48-2e3db4ae84c2" href="https://www.facebook.com" target="_blank" class="socail-single-link w-inline-block">                <div class="socail-icon-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon">
+                    <path d="M14.2067 11.3307L14.8222 7.95576H11.2398V6.76214C11.2398 4.97862 11.9346 4.29269 13.733 4.29269C14.2915 4.29269 14.7411 4.30638 15 4.33382V1.27443C14.5095 1.13722 13.3106 1 12.6158 1C8.95096 1 7.26158 2.74239 7.26158 6.50149V7.95576H5V11.3307H7.26158V18.6748C8.11015 18.8867 8.99742 19 9.91105 19C10.3609 19 10.8042 18.9721 11.2398 18.9191V11.3307H14.2067Z" fill="currentColor">
+                    </path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon hover">
+                    <path d="M14.2067 11.3307L14.8222 7.95576H11.2398V6.76214C11.2398 4.97862 11.9346 4.29269 13.733 4.29269C14.2915 4.29269 14.7411 4.30638 15 4.33382V1.27443C14.5095 1.13722 13.3106 1 12.6158 1C8.95096 1 7.26158 2.74239 7.26158 6.50149V7.95576H5V11.3307H7.26158V18.6748C8.11015 18.8867 8.99742 19 9.91105 19C10.3609 19 10.8042 18.9721 11.2398 18.9191V11.3307H14.2067Z" fill="currentColor">
+                    </path>
+                  </svg>
+                </div>
+                <div class="socail-icon-bg">
+                </div>
+</a>
+                <a aria-label="Link Block" data-w-id="5068d755-33b6-0e76-5b48-2e3db4ae84c9" href="https://www.instragram.com" target="_blank" class="socail-single-link w-inline-block">                <div class="socail-icon-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="social-icon">
+                    <path d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z" stroke="currentColor" stroke-width="2">
+                    </path>
+                    <circle cx="16.5" cy="7.5" r="1.5" fill="currentColor">
+                    </circle>
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2">
+                    </circle>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="social-icon hover">
+                    <path d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z" stroke="currentColor" stroke-width="2">
+                    </path>
+                    <circle cx="16.5" cy="7.5" r="1.5" fill="currentColor">
+                    </circle>
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2">
+                    </circle>
+                  </svg>
+                </div>
+                <div class="socail-icon-bg">
+                </div>
+</a>
+                <a aria-label="Link Block" data-w-id="5068d755-33b6-0e76-5b48-2e3db4ae84d4" href="https://www.linkedin.com" target="_blank" class="socail-single-link w-inline-block">                <div class="socail-icon-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon">
+                    <g clip-path="url(#clip0_48_1622)">
+                      <path d="M2.49922 18H5.49922V6.9H2.49922V18ZM3.99922 2C2.99922 2 2.19922 2.8 2.19922 3.8C2.19922 4.8 2.99922 5.6 3.99922 5.6C4.99922 5.6 5.79922 4.8 5.79922 3.8C5.79922 2.8 4.99922 2 3.99922 2ZM10.5992 8.6V6.9H7.59922V18H10.5992V12.3C10.5992 9.1 14.6992 8.9 14.6992 12.3V18H17.6992V11.2C17.6992 5.8 11.9992 6 10.5992 8.6Z" fill="currentColor">
+                      </path>
+                    </g>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="social-icon hover">
+                    <g clip-path="url(#clip0_48_1622)">
+                      <path d="M2.49922 18H5.49922V6.9H2.49922V18ZM3.99922 2C2.99922 2 2.19922 2.8 2.19922 3.8C2.19922 4.8 2.99922 5.6 3.99922 5.6C4.99922 5.6 5.79922 4.8 5.79922 3.8C5.79922 2.8 4.99922 2 3.99922 2ZM10.5992 8.6V6.9H7.59922V18H10.5992V12.3C10.5992 9.1 14.6992 8.9 14.6992 12.3V18H17.6992V11.2C17.6992 5.8 11.9992 6 10.5992 8.6Z" fill="currentColor">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="socail-icon-bg">
+                </div>
+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68f28cd63ee28173b2cf4734" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/js/webflow.schunk.b5641674105b3a84.js" type="text/javascript" integrity="sha384-O3WhxmHD5kHQSrCGxUx9O9aqDChbj1vVrhT3htBjpSnAOHYYJ9ESiPlOvc9TRncW" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/js/webflow.schunk.170fe5e389396de6.js" type="text/javascript" integrity="sha384-qCSLCz9gcn10KaSsbL4G02Ph8T2Eb/tEM4zSLL0lI0Rf4e2itW8fF3A1u8inEunb" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/js/webflow.e99ad25b.05c8735a36c21929.js" type="text/javascript" integrity="sha384-8NSU8P7P2CwjhnFbPq6Be4fpWI5cUQ8+fM54LaWFg155YcDQbiIM6Oljbr7bl5h0" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.prod.website-files.com/gsap/3.14.2/gsap.min.js" type="text/javascript">
+    </script>
+    <script src="https://cdn.prod.website-files.com/gsap/3.14.2/SplitText.min.js" type="text/javascript">
+    </script>
+    <script src="https://cdn.prod.website-files.com/gsap/3.14.2/ScrollTrigger.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      gsap.registerPlugin(SplitText,ScrollTrigger);
+    </script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger, SplitText);
+
+  document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+    // Run only on desktop
+    if (window.innerWidth &lt; 1024) {
+      console.log(&#34;Scroll animation disabled on mobile/tablet.&#34;);
+      return;
+    }
+
+    const serviceTitles = document.querySelectorAll(&#34;.service-title-wrap&#34;);
+    const serviceDetails = document.querySelectorAll(&#34;.service-item-details&#34;);
+
+    if (serviceTitles.length === 0 || serviceDetails.length === 0) {
+      console.warn(
+        &#34;Service elements not found. Make sure Webflow CMS is loaded.&#34;,
+      );
+      return;
+    }
+
+    const totalServices = serviceTitles.length;
+    let currentIndex = -1;
+
+    // Initial state
+    gsap.set(serviceDetails, { y: 200, opacity: 0 });
+
+    serviceDetails.forEach((detail) =&gt; {
+      detail.style.position = &#34;absolute&#34;;
+      detail.style.top = &#34;0&#34;;
+      detail.style.left = &#34;0&#34;;
+      detail.style.width = &#34;100%&#34;;
+      detail.style.zIndex = 1;
+      detail.style.pointerEvents = &#34;none&#34;;
+    });
+
+    // 👉 DEFAULT FIRST ITEM ACTIVE
+    currentIndex = 0;
+    activateService(0);
+
+    // ScrollTrigger setup
+    ScrollTrigger.create({
+      trigger: &#34;.service-section&#34;,
+      start: &#34;top top&#34;,
+      end: &#34;+=300%&#34;,
+      pin: &#34;.service-sticky-wrap&#34;,
+      scrub: 0,
+
+      onUpdate: (self) =&gt; {
+        const progress = self.progress;
+        let newIndex = Math.floor(progress * totalServices);
+
+        if (newIndex &gt;= totalServices) newIndex = totalServices - 1;
+        if (newIndex &lt; 0) newIndex = 0;
+    console.log(&#34;Progress:&#34;, progress, &#34;Index:&#34;, newIndex); // 👉 DEBUG
+
+        if (newIndex !== currentIndex) {
+          currentIndex = newIndex;
+          activateService(currentIndex);
+        }
+      },
+    });
+
+    function activateService(activeIndex) {
+
+      console.log(&#34;Active index:&#34;, activeIndex);
+console.log(&#34;Title:&#34;, serviceTitles[activeIndex]);
+console.log(&#34;Detail:&#34;, serviceDetails[activeIndex]);
+      // Titles
+     SplitText
+
+      // Details
+      serviceDetails.forEach((detail, i) =&gt; {
+        const imageWrap = detail.querySelector(&#34;.service-image-wrap&#34;);
+        const buttonWrap = detail.querySelector(&#34;.servcie-button-wrap&#34;);
+
+        if (i === activeIndex) {
+          gsap.to(detail, {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: &#34;power3.out&#34;,
+            overwrite: true,
+            onStart: () =&gt; {
+              detail.style.zIndex = 10;
+              detail.style.pointerEvents = &#34;auto&#34;;
+            },
+          });
+
+          if (imageWrap) {
+            gsap.fromTo(
+              imageWrap,
+              {
+                opacity: 0,
+                y: 50,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                delay: 0.2,
+              },
+            );
+          }
+
+          if (buttonWrap) {
+            gsap.fromTo(
+              buttonWrap,
+              {
+                opacity: 0,
+                scale: 0.8,
+              },
+              {
+                opacity: 1,
+                scale: 1,
+                duration: 0.6,
+                ease: &#34;back.out(1.7)&#34;,
+                delay: 0.4,
+              },
+            );
+          }
+        } else {
+          gsap.to(detail, {
+            y: 200,
+            opacity: 0,
+            duration: 0.8,
+            ease: &#34;power3.inOut&#34;,
+            overwrite: true,
+            onStart: () =&gt; {
+              detail.style.zIndex = 1;
+              detail.style.pointerEvents = &#34;none&#34;;
+            },
+          });
+        }
+      });
+    }
+  });
+
+  // Stagger animation code
+
+  ScrollTrigger.batch(&#39;[data-stagger=&#34;animate&#34;] &gt; *&#39;, {
+    interval: 0.1,
+    batchMax: 3,
+
+    start: &#34;top 85%&#34;,
+
+    onEnter: (batch) =&gt; {
+      gsap.to(batch, {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: &#34;power2.out&#34;,
+        stagger: 0.15,
+        overwrite: true,
+      });
+    },
+  });
+    </script>
+  </body>
+</html>

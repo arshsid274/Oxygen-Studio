@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Carousel — Oxygen Studio</title>
+
+  <!-- ── Exact fonts from Webflow CSS ── -->
+  <style>
+    @font-face {
+      font-family: Anton;
+      src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f67f21174fa3b870abbc45_anton-v27-latin-regular.woff2") format("woff2");
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: Inter;
+      src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f28cd63ee28173b2cf4760_inter-v19-latin-regular.woff2") format("woff2");
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: Inter;
+      src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f28cd63ee28173b2cf4752_inter-v19-latin-500.woff2") format("woff2");
+      font-weight: 500; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: Inter;
+      src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f28cd63ee28173b2cf475d_inter-v19-latin-600.woff2") format("woff2");
+      font-weight: 600; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: Inter;
+      src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f67f9e6f50b45d067c1d55_inter-v20-latin-700.woff2") format("woff2");
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+  </style>
+
+  <!-- ── GSAP (free CDN) ── -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       RESET
+    ═══════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%; height: 100%;
+      overflow: hidden;
+      background: #1c1c1c;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       HERO WRAPPER
+    ═══════════════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: #2d2d2d;
+      overflow: hidden;
+      display: flex;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       LEFT PANEL  — 45% — dark text area
+    ═══════════════════════════════════════════════════ */
+    .hero-left {
+      position: relative;
+      z-index: 3;
+      width: 45%;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 64px 0 60px;
+      background: #2d2d2d;
+    }
+
+    /* Gradient bleed — softens the seam between panel & image */
+    .hero-left::after {
+      content: '';
+      position: absolute;
+      right: -72px;
+      top: 0;
+      width: 72px;
+      height: 100%;
+      background: linear-gradient(to right, #2d2d2d 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ── Eyebrow label ── */
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
+    }
+    .eyebrow-line {
+      width: 28px; height: 1px;
+      background: rgba(255,255,255,0.25);
+      flex-shrink: 0;
+    }
+
+    /* ── Heading — Anton, same as Webflow h1 ── */
+    .heading-outer {
+      overflow: hidden;
+      margin-bottom: 26px;
+    }
+
+    .heading {
+      font-family: 'Anton', Impact, sans-serif;
+      font-size: clamp(52px, 5.6vw, 96px);
+      font-weight: 400;
+      line-height: 1.0;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    /* Per-word row — overflow hidden clips the swipe */
+    .word-row {
+      display: block;
+      overflow: hidden;
+      line-height: 1.06;
+    }
+    .word-inner {
+      display: block;
+      will-change: transform, opacity;
+    }
+
+    /* ── Subtext ── */
+    .subtext {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.68;
+      letter-spacing: -0.025em;
+      color: rgba(255,255,255,0.44);
+      max-width: 310px;
+      margin-bottom: 40px;
+      will-change: opacity, transform;
+    }
+
+    /* ── CTA Button — matches Webflow .button style ── */
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 12px 12px 20px;
+      border-radius: 50px;
+      background: #ffffff;
+      color: #01000a;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      width: fit-content;
+      will-change: opacity, transform;
+      transition: background 0.25s;
+    }
+    .cta-btn:hover { background: rgba(255,255,255,0.88); }
+
+    .cta-icon {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: #01000a;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .cta-icon svg { display: block; }
+
+    /* ── Slide counter (bottom-left of left panel) ── */
+    .slide-counter {
+      position: absolute;
+      bottom: 44px;
+      left: 60px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       IMAGE CONTAINER  — 55vw — position fixed right: 0
+    ═══════════════════════════════════════════════════ */
+    .hero-img-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 55vw;   /* ← GSAP animates this value */
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+      /* GPU hint */
+      will-change: width;
+    }
+
+    /* Left-edge gradient fades into #2d2d2d */
+    .img-edge-gradient {
+      position: absolute;
+      left: 0; top: 0;
+      width: 15%;
+      height: 100%;
+      background: linear-gradient(to right, #2d2d2d 0%, transparent 100%);
+      z-index: 6;
+      pointer-events: none;
+    }
+
+    /* ── Image layers ── */
+    .img-layer {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+    }
+
+    .img-layer img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* Current layer sits below */
+    #layerCurrent { z-index: 1; }
+
+    /* Next layer sits above, hidden by clip-path until transition */
+    #layerNext {
+      z-index: 2;
+      clip-path: inset(0 100% 0 0); /* fully clipped from right = invisible */
+      will-change: clip-path, transform;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       THUMBNAIL ROW — bottom-right of image area
+    ═══════════════════════════════════════════════════ */
+    .thumb-row {
+      position: absolute;
+      right: 44px;
+      bottom: 40px;
+      z-index: 10;
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+    }
+
+    .thumb-card {
+      position: relative;
+      width: 90px;
+      height: 112px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .thumb-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .thumb-card:hover img { transform: scale(1.06); }
+
+    /* Dim overlay */
+    .thumb-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      transition: background 0.35s;
+      pointer-events: none;
+    }
+    .thumb-card.is-active::after { background: rgba(0,0,0,0.08); }
+
+    /* White border (animated via GSAP opacity) */
+    .thumb-border {
+      position: absolute;
+      inset: 0;
+      border: 2px solid rgba(255,255,255,0);
+      border-radius: 8px;
+      z-index: 3;
+      pointer-events: none;
+      transition: border-color 0.35s;
+    }
+    .thumb-card.is-active .thumb-border {
+      border-color: rgba(255,255,255,0.9);
+    }
+
+    /* Progress bar on active thumb */
+    .thumb-progress {
+      position: absolute;
+      bottom: 0; left: 0;
+      height: 3px;
+      width: 0%;
+      background: #ffffff;
+      border-radius: 0 0 8px 8px;
+      z-index: 4;
+    }
+
+    /* Small index label */
+    .thumb-label {
+      position: absolute;
+      bottom: 8px; left: 9px;
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.6);
+      z-index: 5;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════════ */
+    @media (max-width: 991px) {
+      .hero { flex-direction: column; }
+
+      .hero-left {
+        position: relative;
+        z-index: 4;
+        width: 100%;
+        flex-shrink: unset;
+        height: 100vh;
+        background: transparent;
+        padding: 100px 32px 120px;
+        justify-content: flex-end;
+      }
+      .hero-left::after { display: none; }
+
+      /* Full-bleed image */
+      .hero-img-container {
+        position: absolute;
+        inset: 0;
+        width: 100% !important; /* override GSAP during mobile */
+        height: 100%;
+      }
+      .img-edge-gradient { display: none; }
+
+      /* Dark overlay so text is readable */
+      .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(20,20,20,0.92) 0%,
+          rgba(20,20,20,0.55) 45%,
+          rgba(20,20,20,0.15) 100%
+        );
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .heading { font-size: clamp(40px, 10vw, 68px); }
+      .subtext  { max-width: 100%; font-size: 14px; }
+
+      .thumb-row  { right: 20px; bottom: 24px; gap: 8px; }
+      .thumb-card { width: 72px; height: 88px; }
+
+      .slide-counter { left: 32px; bottom: 30px; }
+    }
+
+    @media (max-width: 479px) {
+      .hero-left { padding: 80px 20px 100px; }
+      .thumb-card { width: 60px; height: 74px; }
+      .thumb-row  { right: 12px; gap: 6px; }
+      .slide-counter { left: 20px; }
+      .cta-btn { font-size: 13px; padding: 11px 11px 11px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero" id="hero">
+
+  <!-- ──────────────────────────────
+       LEFT: Text Content
+  ────────────────────────────────── -->
+  <div class="hero-left">
+
+    <div class="eyebrow" id="eyebrow">
+      <span class="eyebrow-line"></span>
+      <span id="eyebrowText">Creative Agency</span>
+    </div>
+
+    <div class="heading-outer">
+      <h1 class="heading" id="heading"><!-- JS builds word rows --></h1>
+    </div>
+
+    <p class="subtext" id="subtext"></p>
+
+    <button class="cta-btn" id="ctaBtn">
+      <span>Explore Work</span>
+      <span class="cta-icon">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10.5024 7.4L7.284 4.182 8.132 3.333 12.8 8l-4.667 4.667-.848-.849 3.218-3.218H3.2V7.4h7.302z" fill="currentColor"/>
+        </svg>
+      </span>
+    </button>
+
+    <div class="slide-counter" id="slideCounter">01 / 03</div>
+
+  </div>
+
+  <!-- ──────────────────────────────
+       RIGHT: Image Container
+  ────────────────────────────────── -->
+  <div class="hero-img-container" id="imgContainer">
+
+    <!-- Gradient seam -->
+    <div class="img-edge-gradient"></div>
+
+    <!-- Current image (below) -->
+    <div class="img-layer" id="layerCurrent">
+      <img id="imgCurrent" src="" alt="" />
+    </div>
+
+    <!-- Next image (above, clipped until transition) -->
+    <div class="img-layer" id="layerNext">
+      <img id="imgNext" src="" alt="" />
+    </div>
+
+  </div>
+
+  <!-- ──────────────────────────────
+       THUMBNAILS
+  ────────────────────────────────── -->
+  <div class="thumb-row" id="thumbRow"></div>
+
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════════════ -->
+<script>
+/* ─────────────────────────────────────────────────────
+   SLIDE DATA (images from original index.html)
+───────────────────────────────────────────────────── */
+const CDN = 'https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/';
+
+const slides = [
+  {
+    eyebrow:  'Creative Agency',
+    heading:  ['SMART', 'BRANDING'],
+    sub:      'We craft identities that speak before words do — bold, purposeful, and built to last.',
+    img:      CDN + '699d90996370cb2fb545ed5d_Hero%20Section%203.jpg',
+    thumb:    CDN + '699d90984ba430a50d2af541_branding-small.png',
+  },
+  {
+    eyebrow:  'UI / UX Design',
+    heading:  ['SMART', 'DESIGNER'],
+    sub:      'Visual solutions engineered for modern minds — pixel-perfect, human-centred design.',
+    img:      CDN + '6930982c48d93d8f4b732f01_hero%20image%202.webp',
+    thumb:    CDN + '6930982c48d93d8f4b732f01_hero%20image%202-p-800.webp',
+  },
+  {
+    eyebrow:  'Web Development',
+    heading:  ['SMART', 'DEVELOPER'],
+    sub:      'Code that performs as beautifully as it looks — fast, scalable, future-ready.',
+    img:      CDN + '699d9099175834d1d91f39dc_developer.jpg',
+    thumb:    CDN + '699d9099c2385b84e5533f27_developer-small.png',
+  },
+];
+
+const N = slides.length;
+
+/* ─────────────────────────────────────────────────────
+   DOM REFS
+───────────────────────────────────────────────────── */
+const imgContainer  = document.getElementById('imgContainer');
+const layerCurrent  = document.getElementById('layerCurrent');
+const layerNext     = document.getElementById('layerNext');
+const imgCurrent    = document.getElementById('imgCurrent');
+const imgNext       = document.getElementById('imgNext');
+const headingEl     = document.getElementById('heading');
+const subtextEl     = document.getElementById('subtext');
+const eyebrowTextEl = document.getElementById('eyebrowText');
+const slideCounterEl= document.getElementById('slideCounter');
+const thumbRowEl    = document.getElementById('thumbRow');
+
+/* ─────────────────────────────────────────────────────
+   BUILD THUMBNAILS
+───────────────────────────────────────────────────── */
+slides.forEach((s, i) => {
+  const card = document.createElement('div');
+  card.className = 'thumb-card';
+  card.dataset.idx = i;
+  card.innerHTML = `
+    <img src="${s.thumb}" alt="${s.heading.join(' ')}" loading="lazy" />
+    <div class="thumb-border"></div>
+    <span class="thumb-label">0${i + 1}</span>
+    <div class="thumb-progress"></div>
+  `;
+  card.addEventListener('click', () => { if (!isAnimating) jumpTo(i); });
+  thumbRowEl.appendChild(card);
+});
+
+const thumbCards = [...thumbRowEl.querySelectorAll('.thumb-card')];
+
+/* ─────────────────────────────────────────────────────
+   BUILD HEADING — splits into .word-row/.word-inner spans
+───────────────────────────────────────────────────── */
+function buildHeading(words) {
+  headingEl.innerHTML = '';
+  return words.map(word => {
+    const row   = document.createElement('span');
+    row.className = 'word-row';
+    const inner = document.createElement('span');
+    inner.className  = 'word-inner';
+    inner.textContent = word;
+    row.appendChild(inner);
+    headingEl.appendChild(row);
+    return inner;
+  });
+}
+
+/* ─────────────────────────────────────────────────────
+   THUMBNAIL STATE
+───────────────────────────────────────────────────── */
+let progressTween = null;
+const AUTO_DELAY  = 5; // seconds
+
+function activateThumbs(idx) {
+  if (progressTween) progressTween.kill();
+
+  thumbCards.forEach((c, i) => {
+    c.classList.toggle('is-active', i === idx);
+    gsap.set(c.querySelector('.thumb-progress'), { width: '0%' });
+  });
+
+  slideCounterEl.textContent = `0${idx + 1} / 0${N}`;
+
+  progressTween = gsap.to(
+    thumbCards[idx].querySelector('.thumb-progress'),
+    { width: '100%', duration: AUTO_DELAY, ease: 'none' }
+  );
+}
+
+/* ─────────────────────────────────────────────────────
+   STATE
+───────────────────────────────────────────────────── */
+let current     = 0;
+let isAnimating = false;
+let autoTimer   = null;
+
+/* ─────────────────────────────────────────────────────
+   INIT — first slide, entrance animation
+───────────────────────────────────────────────────── */
+function init() {
+  const s = slides[0];
+
+  imgCurrent.src = s.img;
+  eyebrowTextEl.textContent = s.eyebrow;
+  subtextEl.textContent     = s.sub;
+
+  const wordInners = buildHeading(s.heading);
+
+  /* Start all elements invisible */
+  gsap.set(wordInners,          { y: '110%', opacity: 0 });
+  gsap.set([subtextEl, ctaBtn], { opacity: 0, y: 22 });
+  gsap.set('#eyebrow',          { opacity: 0, x: -12 });
+  gsap.set(imgCurrent,          { opacity: 0 });
+  gsap.set(imgContainer,        { width: '55vw' });
+
+  /* Staggered entrance */
+  const tl = gsap.timeline({
+    delay: 0.15,
+    onComplete: () => {
+      activateThumbs(0);
+      startAuto();
+    },
+  });
+
+  tl.to(imgCurrent, { opacity: 1, duration: 1.0, ease: 'power2.out' }, 0)
+    .to('#eyebrow',  { opacity: 1, x: 0, duration: 0.55, ease: 'power2.out' }, 0.3)
+    .to(wordInners,  {
+      y: '0%', opacity: 1,
+      duration: 0.65,
+      stagger: { each: 0.1, from: 'start' },
+      ease: 'power3.out',
+    }, 0.55)
+    .to([subtextEl, ctaBtn], {
+      opacity: 1, y: 0,
+      duration: 0.55,
+      stagger: 0.1,
+      ease: 'power2.out',
+    }, 0.9);
+}
+
+/* ─────────────────────────────────────────────────────
+   TRANSITION — 3-phase GSAP timeline
+   Matches spec exactly:
+     Phase 1: 0s → 0.6s   expand container + text out
+     Phase 2: 0.4s → 1.1s  clip-path wipe + old img push
+     Phase 3: 1.0s → 1.6s  contract container + text in
+───────────────────────────────────────────────────── */
+const ctaBtn = document.getElementById('ctaBtn');
+
+function transitionTo(nextIdx) {
+  if (isAnimating || nextIdx === current) return;
+  isAnimating = true;
+  clearInterval(autoTimer);
+
+  const nextSlide   = slides[nextIdx];
+  const currentWords = [...headingEl.querySelectorAll('.word-inner')];
+
+  /* Pre-load next image & reset next layer */
+  imgNext.src = nextSlide.img;
+  gsap.set(layerNext,    { clipPath: 'inset(0 100% 0 0)', x: '0%' });
+  gsap.set(layerCurrent, { x: '0%' });
+
+  /* ── MASTER TIMELINE ── */
+  const tl = gsap.timeline({
+    onComplete() {
+      /* Commit swap: current layer now shows the new slide */
+      imgCurrent.src = nextSlide.img;
+      gsap.set(layerCurrent, { x: '0%', opacity: 1 });
+      /* Reset next layer back to hidden */
+      gsap.set(layerNext,    { clipPath: 'inset(0 100% 0 0)', x: '0%' });
+
+      current     = nextIdx;
+      isAnimating = false;
+      startAuto();
+    },
+  });
+
+  /* ══════════════════════════════════════════════════
+     PHASE 1 — Pre-wipe expansion  (0s → 0.6s)
+     Container: 55vw → 72vw  (right edge stays fixed)
+     Text: opacity 1→0, y 0→-20px in 0.4s
+  ══════════════════════════════════════════════════ */
+  tl.addLabel('phase1', 0)
+
+    /* Container expands leftward */
+    .to(imgContainer, {
+      width: '72vw',
+      duration: 0.6,
+      ease: 'power2.inOut',
+    }, 'phase1')
+
+    /* Heading words swipe OUT upward */
+    .to(currentWords, {
+      y: '-110%',
+      duration: 0.38,
+      stagger: { each: 0.042, from: 'start' },
+      ease: 'power2.in',
+    }, 'phase1')
+
+    /* Subtext & eyebrow fade out */
+    .to([subtextEl, '#eyebrow'], {
+      opacity: 0,
+      y: -16,
+      duration: 0.30,
+      ease: 'power2.in',
+    }, 'phase1+=0.04');
+
+  /* ══════════════════════════════════════════════════
+     PHASE 2 — Image wipe  (0.4s → 1.1s)
+     New image: clip-path inset(0 100% 0 0) → inset(0 0% 0 0)
+     Direction: LEFT-to-RIGHT reveal
+     Old image: translateX 0 → +15% (pushed aside)
+  ══════════════════════════════════════════════════ */
+  tl.addLabel('phase2', 0.4)
+
+    /* New image sweeps in left → right */
+    .to(layerNext, {
+      clipPath: 'inset(0 0% 0 0)',
+      duration: 0.70,
+      ease: 'power3.inOut',
+    }, 'phase2')
+
+    /* Old image pushed slightly to the right (parallax push) */
+    .to(layerCurrent, {
+      x: '15%',
+      duration: 0.70,
+      ease: 'power3.inOut',
+    }, 'phase2');
+
+  /* ══════════════════════════════════════════════════
+     PHASE 3 — Contract & settle  (1.0s → 1.6s)
+     Container: 72vw → 55vw
+     New text fades in, staggered per word, starts 1.1s
+  ══════════════════════════════════════════════════ */
+  tl.addLabel('phase3', 1.0)
+
+    /* Container contracts back */
+    .to(imgContainer, {
+      width: '55vw',
+      duration: 0.60,
+      ease: 'power2.out',
+    }, 'phase3');
+
+  /* Swap content at 1.05s — just before text-in begins */
+  tl.call(() => {
+    eyebrowTextEl.textContent = nextSlide.eyebrow;
+    subtextEl.textContent     = nextSlide.sub;
+
+    const nextWords = buildHeading(nextSlide.heading);
+
+    /* Reset positions */
+    gsap.set(nextWords,           { y: '110%', opacity: 1 });
+    gsap.set([subtextEl, '#eyebrow'], { opacity: 0, y: 18 });
+
+    /* ── Text IN (1.1s from tl start) ── */
+    gsap.to(nextWords, {
+      y: '0%',
+      duration: 0.52,
+      stagger: { each: 0.09, from: 'start' },
+      ease: 'power3.out',
+      delay: 0.05,  /* 1.05 + 0.05 = 1.10s */
+    });
+
+    gsap.to(['#eyebrow', subtextEl], {
+      opacity: 1,
+      y: 0,
+      duration: 0.44,
+      stagger: 0.08,
+      ease: 'power2.out',
+      delay: 0.12,
+    });
+
+    /* Update thumbnail row */
+    activateThumbs(nextIdx);
+
+  }, null, 1.05);
+
+  return tl;
+}
+
+/* ─────────────────────────────────────────────────────
+   AUTO ADVANCE
+───────────────────────────────────────────────────── */
+function startAuto() {
+  clearInterval(autoTimer);
+  autoTimer = setInterval(() => {
+    transitionTo((current + 1) % N);
+  }, AUTO_DELAY * 1000);
+}
+
+function jumpTo(idx) {
+  clearInterval(autoTimer);
+  transitionTo(idx);
+}
+
+/* ─────────────────────────────────────────────────────
+   SWIPE (mobile touch)
+───────────────────────────────────────────────────── */
+let touchStartX = 0;
+const heroEl = document.getElementById('hero');
+
+heroEl.addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].clientX;
+}, { passive: true });
+
+heroEl.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(dx) > 48 && !isAnimating) {
+    jumpTo((current + (dx < 0 ? 1 : -1) + N) % N);
+  }
+}, { passive: true });
+
+/* ─────────────────────────────────────────────────────
+   KEYBOARD
+───────────────────────────────────────────────────── */
+document.addEventListener('keydown', e => {
+  if (isAnimating) return;
+  if (e.key === 'ArrowRight') jumpTo((current + 1) % N);
+  if (e.key === 'ArrowLeft')  jumpTo((current - 1 + N) % N);
+});
+
+/* ─────────────────────────────────────────────────────
+   RESPONSIVE — disable width animation on mobile
+───────────────────────────────────────────────────── */
+function isMobile() { return window.innerWidth < 992; }
+
+/* Override transitionTo on mobile to skip container width anim */
+const _transitionTo = transitionTo;
+
+/* ─────────────────────────────────────────────────────
+   BOOT
+───────────────────────────────────────────────────── */
+init();
+</script>
+
+</body>
+</html>

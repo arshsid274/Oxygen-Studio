@@ -1,0 +1,433 @@
+/*
+  ─── GLOBAL STYLES ─────────────────────────────────────────────────────────
+  Add these to your globals.css (not this module):
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #1c1c1c; }
+
+  @font-face {
+    font-family: Anton;
+    src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f67f21174fa3b870abbc45_anton-v27-latin-regular.woff2") format("woff2");
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f28cd63ee28173b2cf4760_inter-v19-latin-regular.woff2") format("woff2");
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f28cd63ee28173b2cf4752_inter-v19-latin-500.woff2") format("woff2");
+    font-weight: 500; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f28cd63ee28173b2cf475d_inter-v19-latin-600.woff2") format("woff2");
+    font-weight: 600; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url("https://cdn.prod.website-files.com/68f28cd63ee28173b2cf4734/68f67f9e6f50b45d067c1d55_inter-v20-latin-700.woff2") format("woff2");
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  ────────────────────────────────────────────────────────────────────────── */
+
+/* ═══════════════════════════════════════════════════
+   HERO WRAPPER
+═══════════════════════════════════════════════════ */
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #2d2d2d;
+  overflow: hidden;
+  display: flex;
+}
+
+/* ═══════════════════════════════════════════════════
+   LEFT PANEL  — 45% — dark text area
+═══════════════════════════════════════════════════ */
+.heroLeft {
+  position: relative;
+  z-index: 3;
+  width: 45%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 64px 0 60px;
+  background: #2d2d2d;
+}
+
+/* Gradient bleed — softens the seam between panel & image */
+.heroLeft::after {
+  content: '';
+  position: absolute;
+  right: -72px;
+  top: 0;
+  width: 72px;
+  height: 100%;
+  background: linear-gradient(to right, #2d2d2d 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Eyebrow label ── */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.eyebrowLine {
+  width: 28px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+/* ── Heading — Anton ── */
+.headingOuter {
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+
+.heading {
+  font-family: 'Anton', Impact, sans-serif;
+  font-size: clamp(52px, 5.6vw, 96px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Per-word row — overflow hidden clips the swipe */
+.wordRow {
+  display: block;
+  overflow: hidden;
+  line-height: 1.06;
+}
+
+.wordInner {
+  display: block;
+  will-change: transform, opacity;
+}
+
+/* ── Subtext ── */
+.subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.68;
+  letter-spacing: -0.025em;
+  color: rgba(255, 255, 255, 0.44);
+  max-width: 310px;
+  margin-bottom: 40px;
+  will-change: opacity, transform;
+}
+
+/* ── CTA Button ── */
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 12px 12px 20px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #01000a;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  will-change: opacity, transform;
+  transition: background 0.25s;
+}
+
+.ctaBtn:hover {
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.ctaIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #01000a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ctaIcon svg {
+  display: block;
+}
+
+/* ── Slide counter ── */
+.slideCounter {
+  position: absolute;
+  bottom: 44px;
+  left: 60px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════
+   IMAGE CONTAINER  — 55vw — fixed right: 0
+═══════════════════════════════════════════════════ */
+.heroImgContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  will-change: width;
+}
+
+/* Left-edge gradient fades into #2d2d2d */
+.imgEdgeGradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  background: linear-gradient(to right, #2d2d2d 0%, transparent 100%);
+  z-index: 6;
+  pointer-events: none;
+}
+
+/* ── Image layers ── */
+.imgLayer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imgLayer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Current layer sits below */
+.imgLayerCurrent {
+  z-index: 1;
+}
+
+/* Next layer sits above, hidden by clip-path until transition */
+.imgLayerNext {
+  z-index: 2;
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path, transform;
+}
+
+/* ═══════════════════════════════════════════════════
+   THUMBNAIL ROW — bottom-right of image area
+═══════════════════════════════════════════════════ */
+.thumbRow {
+  position: absolute;
+  right: 44px;
+  bottom: 40px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.thumbCard {
+  position: relative;
+  width: 90px;
+  height: 112px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.thumbCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.thumbCard:hover img {
+  transform: scale(1.06);
+}
+
+/* Dim overlay */
+.thumbCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  transition: background 0.35s;
+  pointer-events: none;
+}
+
+.thumbCard.isActive::after {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* White border */
+.thumbBorder {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  z-index: 3;
+  pointer-events: none;
+  transition: border-color 0.35s;
+}
+
+.thumbCard.isActive .thumbBorder {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Progress bar on active thumb */
+.thumbProgress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #ffffff;
+  border-radius: 0 0 8px 8px;
+  z-index: 4;
+}
+
+/* Small index label */
+.thumbLabel {
+  position: absolute;
+  bottom: 8px;
+  left: 9px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 5;
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════ */
+@media (max-width: 991px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .heroLeft {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    flex-shrink: unset;
+    height: 100vh;
+    background: transparent;
+    padding: 100px 32px 120px;
+    justify-content: flex-end;
+  }
+
+  .heroLeft::after {
+    display: none;
+  }
+
+  /* Full-bleed image */
+  .heroImgContainer {
+    position: absolute;
+    inset: 0;
+    /* width: 100% !important handled via inline style override in JS */
+    height: 100%;
+  }
+
+  .imgEdgeGradient {
+    display: none;
+  }
+
+  /* Dark overlay so text is readable */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(20, 20, 20, 0.92) 0%,
+      rgba(20, 20, 20, 0.55) 45%,
+      rgba(20, 20, 20, 0.15) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .heading {
+    font-size: clamp(40px, 10vw, 68px);
+  }
+
+  .subtext {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .thumbRow {
+    right: 20px;
+    bottom: 24px;
+    gap: 8px;
+  }
+
+  .thumbCard {
+    width: 72px;
+    height: 88px;
+  }
+
+  .slideCounter {
+    left: 32px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .heroLeft {
+    padding: 80px 20px 100px;
+  }
+
+  .thumbCard {
+    width: 60px;
+    height: 74px;
+  }
+
+  .thumbRow {
+    right: 12px;
+    gap: 6px;
+  }
+
+  .slideCounter {
+    left: 20px;
+  }
+
+  .ctaBtn {
+    font-size: 13px;
+    padding: 11px 11px 11px 18px;
+  }
+}
